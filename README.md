@@ -9,3 +9,4 @@ What I use for Ubuntu
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [youcompleteme](https://github.com/Valloric/YouCompleteMe)
 * [easymotion](https://github.com/Lokaltog/vim-easymotion)
+* [minibufexpl](https://github.com/fholgado/minibufexpl.vim)
