@@ -15,5 +15,13 @@ What I use for Ubuntu
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
+# Install
+```shell
+git clone https://github.com/jonwho/dotfiles ~/jonwho-dotfiles
+cd ~/jonwho-dotfiles
+chmod +x install.sh
+./install.sh
+```
+
 # TODO
-* Set up script to set up environment with dotfiles
+* Make script less sucky e.g. remove fatal warnings
