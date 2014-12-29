@@ -23,5 +23,10 @@ chmod +x install.sh
 ./install.sh
 ```
 
+## YouCompleteMe
+YouCompleteMe is a great code completion plugin but requires some
+extra work to install. Refer to
+[https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) for installation notes.
+
 # TODO
 * Make script less sucky e.g. remove fatal warnings
