@@ -8,6 +8,8 @@ echo ""
 cp ~/.vimrc ~/old.vimrc
 # copy .bashrc to old.bashrc
 cp ~/.bashrc ~/old.bashrc
+echo "Done copying"
+echo ""
 
 echo "Replacing .vimrc and .bashrc with repo version"
 echo ""
@@ -16,6 +18,8 @@ echo ""
 cp ./vimrc ~/.vimrc
 # replace .bashrc with repo version of bashrc
 cp ./bashrc ~/.bashrc
+echo "Done replacing"
+echo ""
 
 echo "Install vim plugins to ~/.vim/bundle/"
 echo ""
@@ -35,6 +39,8 @@ git clone https://github.com/fholgado/minibufexpl.vim
 git clone https://github.com/tpope/vim-endwise
 git clone https://github.com/Raimondi/delimitMate
 
+echo "Done installing vim plugins"
 echo ""
+
 echo "Done running install script!"
 echo ""
