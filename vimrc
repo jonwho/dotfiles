@@ -84,6 +84,8 @@ syntax on
 set cin
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+:set makeprg=gcc\ %\ &&\ ./a.out " Compile C file and run a.out with one cmd
+                                 " :make
 
 "=============================================================================
 " Misc
