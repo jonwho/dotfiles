@@ -28,5 +28,14 @@ YouCompleteMe is a great code completion plugin but requires some
 extra work to install. Refer to
 [https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) for installation notes.
 
+To install on Arch Linux run the following commands.
+```
+wget https://aur.archlinux.org/packages/vi/vim-youcompleteme-git/vim-youcompleteme-git.tar.gz
+tar xzvf vim-youcompleteme-git.tar.gz
+cd vim-youcompleteme
+makepkg -s
+sudo pacman -U vim-youcompleteme-git-*.tar.xz
+```
+
 # TODO
 * Make script less sucky e.g. remove fatal warnings
