@@ -42,5 +42,11 @@ git clone https://github.com/Raimondi/delimitMate
 echo "Done installing vim plugins"
 echo ""
 
+# Getting can't stat error on Arch Linux
+#echo "Copy git-autocomplete script"
+#cp git-completion.bash ~/.git-completion.bash
+#echo "Done"
+#echo ""
+
 echo "Done running install script!"
 echo ""

@@ -113,3 +113,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# git auto complete for bash
+source ~/.git-complete.bash
