@@ -115,4 +115,4 @@ if ! shopt -oq posix; then
 fi
 
 # git auto complete for bash
-source ~/.git-complete.bash
+source ~/.git-completion.bash
