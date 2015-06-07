@@ -116,3 +116,8 @@ fi
 
 # git auto complete for bash
 source ~/.git-completion.bash
+
+# make vim default editor
+export EDITOR='vim'
+# make vim default visual
+export VISUAL='vim'
