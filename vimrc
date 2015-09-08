@@ -121,7 +121,7 @@ map <C-K> :tabnext <CR>
 map <C-n> :NERDTreeToggle <CR>
 
 " Autostart NERDTree when vim starts up
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " Autostart NERDTree when vim starts up if no files specified
 autocmd vimenter * if !argc() | NERDTree | endif
@@ -132,3 +132,6 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " Put cursor on a line between { and }
 let delimitMate_expand_cr = 1
+
+" Map jj to esc
+:imap jj <Esc>
