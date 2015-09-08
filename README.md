@@ -1,7 +1,7 @@
 dotfiles
 ========
 
-What I use for Ubuntu
+What I use for Ubuntu/Arch Linux
 
 # Vim
 * [pathogen](https://github.com/tpope/vim-pathogen)
@@ -27,6 +27,14 @@ chmod +x install.sh
 YouCompleteMe is a great code completion plugin but requires some
 extra work to install. Refer to
 [https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) for installation notes.
+
+As of Ubuntu 14.04 LTS can now install YouCompleteMe with the package manager.
+```
+sudo apt-get install vim
+sudo apt-get install vim-youcompleteme
+sudo apt-get install vim-addon-manager
+vam install youcompleteme
+```
 
 To install on Arch Linux run the following commands.
 ```
