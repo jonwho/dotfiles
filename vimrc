@@ -56,9 +56,9 @@ set smartindent         " next line of indention based on previous line
 set formatoptions=tcrq	" how to auto indent, see fo-table for description
 
 " Expand tabs in C files to spaces
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp} set expandtab
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp} set tabstop=2
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set expandtab
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set tabstop=2
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
@@ -133,5 +133,13 @@ let g:ctrlp_cmd = 'CtrlP'
 " Put cursor on a line between { and }
 let delimitMate_expand_cr = 1
 
-" Map jj to esc
+" Map jj to <Esc> to more conveniently escape insert mode
 :imap jj <Esc>
+
+" Use jellybeans theme
+:color jellybeans
+
+" Highlight current line
+:set cursorline
+:hi CursorLine cterm=NONE ctermbg=red ctermfg=white guibg=#ed00f5 guifg=white
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR> " Toggle the cursor highlight with \c
