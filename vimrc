@@ -143,3 +143,6 @@ let delimitMate_expand_cr = 1
 :set cursorline
 :hi CursorLine cterm=NONE ctermbg=red ctermfg=white guibg=#ed00f5 guifg=white
 :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR> " Toggle the cursor highlight with \c
+
+" Enable NerdTreeTabs on vim startup
+let g:nerdtree_tabs_open_on_console_startup=1
