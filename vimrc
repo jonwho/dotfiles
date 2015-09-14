@@ -55,7 +55,7 @@ set autoindent	        " autoindent on
 set smartindent         " next line of indention based on previous line
 set formatoptions=tcrq	" how to auto indent, see fo-table for description
 
-" Expand tabs in C files to spaces
+" Expand tabs in these files to spaces
 au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set expandtab
 au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set shiftwidth=2
 au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set tabstop=2
@@ -105,10 +105,6 @@ autocmd FileType c,cpp,java set mps+==:;
 " Spelling toggle via F10 and F11
 map <F10> <Esc>setlocal spell spelllang=en_us<CR>
 map <F11> <Esc>setlocal nospell<CR>
-
-" Switch between vim tabs quickly
-map <C-J> :tabprevious <CR>
-map <C-K> :tabnext <CR>
 
 "setlocal textwidth=80           " used for text wrapping
 "match ErrorMsg '\%>80v.+'

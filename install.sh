@@ -40,6 +40,7 @@ git clone https://github.com/tpope/vim-endwise
 git clone https://github.com/Raimondi/delimitMate
 git clone https://github.com/jistr/vim-nerdtree-tabs.git
 git clone https://github.com/nanotech/jellybeans.vim.git
+git clone https://github.com/scrooloose/nerdcommenter.git
 
 echo "Done installing vim plugins"
 echo ""
