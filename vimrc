@@ -146,3 +146,9 @@ let delimitMate_expand_cr = 1
 
 " Enable NerdTreeTabs on vim startup
 let g:nerdtree_tabs_open_on_console_startup=1
+
+" Use <ctrl> + h/j/k/l to move between Vim panes
+map <C-h> <C-W>h
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-l> <C-W>l
