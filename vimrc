@@ -148,3 +148,6 @@ map <C-h> <C-W>h
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-l> <C-W>l
+
+" Enable the mouse (notable: click cursor location and scrolling)
+:set mouse=a
