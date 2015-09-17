@@ -56,9 +56,9 @@ set smartindent         " next line of indention based on previous line
 set formatoptions=tcrq	" how to auto indent, see fo-table for description
 
 " Expand tabs in these files to spaces
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set expandtab
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py} set tabstop=2
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee} set expandtab
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee} set tabstop=2
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
