@@ -52,7 +52,9 @@ set bg=dark
 set bs=2	        " fix backspacing in insert mode
 
 set autoindent	        " autoindent on
-set smartindent         " next line of indention based on previous line
+" smartindent is an old script! it was meant to be smart complement to
+" autoindent but it keeps fooking up python and ruby comments
+" set smartindent         " next line of indention based on previous line
 set formatoptions=tcrq	" how to auto indent, see fo-table for description
 
 " Expand tabs in these files to spaces
@@ -82,7 +84,7 @@ set wrapmargin=2		" word wraps 2 characters from the margin
 set showmatch          " Show match when inserting {}, [], or ()'s
 syntax on 
 set cin
-filetype plugin on
+filetype plugin indent on " Need indent keyword so that python/ruby comments format properly
 set omnifunc=syntaxcomplete#Complete
 :set makeprg=gcc\ %\ &&\ ./a.out " Compile C file and run a.out with one cmd
                                  " :make
