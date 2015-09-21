@@ -35,7 +35,7 @@ cd ~/.vim/bundle
 git clone https://github.com/kien/ctrlp.vim
 git clone https://github.com/scrooloose/nerdtree
 git clone https://github.com/Lokaltog/vim-easymotion
-git clone https://github.com/fholgado/minibufexpl.vim
+#git clone https://github.com/fholgado/minibufexpl.vim
 git clone https://github.com/tpope/vim-endwise
 git clone https://github.com/Raimondi/delimitMate
 git clone https://github.com/jistr/vim-nerdtree-tabs.git
