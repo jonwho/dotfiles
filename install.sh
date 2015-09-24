@@ -41,6 +41,9 @@ git clone https://github.com/Raimondi/delimitMate
 git clone https://github.com/jistr/vim-nerdtree-tabs.git
 git clone https://github.com/nanotech/jellybeans.vim.git
 git clone https://github.com/scrooloose/nerdcommenter.git
+git clone https://github.com/bling/vim-airline.git
+git clone https://github.com/tpope/vim-fugitive.git
+git clone https://github.com/scrooloose/syntastic.git
 
 echo "Done installing vim plugins"
 echo ""

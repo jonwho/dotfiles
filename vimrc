@@ -10,6 +10,9 @@ execute pathogen#infect()
 " Vundle Settings
 "============================================================================
 "set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'Valloric/YouCompleteMe'
 "call vundle#rc()
 "Bundle 'gmarik/vundle'
 "Bundle 'Valloric/YouCompleteMe'
