@@ -88,7 +88,11 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias vi='vim'
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  alias vi='mvim -v'
+else
+  alias vi='vim'
+fi
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -113,9 +117,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# git auto complete for bash
-source ~/.git-completion.bash
 
 # make vim default editor
 export EDITOR='vim'
