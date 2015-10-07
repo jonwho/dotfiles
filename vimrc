@@ -120,6 +120,8 @@ map <F11> <Esc>setlocal nospell<CR>
 
 " Shortcut to toggle NERDTree
 map <C-n> :NERDTreeToggle <CR>
+" Show hidden files in NERDTree on startup <shift>+<i> to toggle
+let NERDTreeShowHidden=1
 
 " Autostart NERDTree when vim starts up
 " autocmd vimenter * NERDTree
