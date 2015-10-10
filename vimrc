@@ -171,3 +171,4 @@ let g:syntastic_check_on_wq=0
 
 " Run 'npm install -g jshint' to put jshint in PATH
 let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_html_tidy_ignore_errors = ["proprietary attribute \"ng-"]
