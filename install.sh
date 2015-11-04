@@ -48,6 +48,11 @@ git clone https://github.com/scrooloose/syntastic.git
 echo "Done installing vim plugins"
 echo ""
 
+echo "Copy git-prompt.sh to ~/"
+echo ""
+cp ./git-prompt.sh ~/.git-prompt.sh
+echo "Done copying"
+
 # Getting can't stat error on Arch Linux
 #echo "Copy git-autocomplete script"
 #cp git-completion.bash ~/.git-completion.bash

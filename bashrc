@@ -72,12 +72,14 @@ xterm*|rxvt*)
     ;;
 esac
 
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -90,6 +92,7 @@ alias la='ls -A'
 alias l='ls -CF'
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias vi='mvim -v'
+  alias ls='ls -G' # OSX has no command dircolor
 else
   alias vi='vim'
 fi
@@ -122,3 +125,6 @@ fi
 export EDITOR='vim'
 # make vim default visual
 export VISUAL='vim'
+
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
+eval $(dircolors -b $HOME/.dircolors)
