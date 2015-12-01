@@ -51,5 +51,11 @@ makepkg -s
 sudo pacman -U vim-youcompleteme-git-*.tar.xz
 ```
 
+# Quick ctags note
+Need to run ctags command in the project root to update .vimtags so vim knows where them tags at.
+```
+ctags -R .
+```
+
 # TODO
 * Make script less sucky e.g. remove fatal warnings
