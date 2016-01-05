@@ -26,7 +26,7 @@ set novisualbell        " no error flashes
 set title               " filename [+=-] (path) - GVIM
 set confirm             " Starts dialog when exiting without saving
 
-"set ignorecase			" search without regards to case
+set ignorecase			" search without regards to case
 set smartcase                   " switch case sensitivity context depending on what cases you type
 set noincsearch			" don't go immediately to pattern typed
 set nohlsearch			" don't highlight search terms

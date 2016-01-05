@@ -46,6 +46,7 @@ git clone https://github.com/tpope/vim-fugitive.git
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/xolox/vim-easytags.git
 git clone https://github.com/xolox/vim-misc.git
+git clone https://github.com/tpope/vim-rails.git
 
 echo "Done installing vim plugins"
 echo ""
