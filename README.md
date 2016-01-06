@@ -20,6 +20,7 @@ What I use for Ubuntu/Arch Linux
 * [vim-easytags](https://github.com/xolox/vim-easytags.git)
 * [vim-misc](https://github.com/xolox/vim-misc.git)
 * [vim-rails](https://github.com/tpope/vim-rails.git)
+* [ag](https://github.com/rking/ag.vim.git)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 # Install
@@ -57,6 +58,10 @@ Need to run ctags command in the project root to update .vimtags so vim knows wh
 ```
 ctags -R .
 ```
+
+# Ag aka the silver searcher
+Must install separately onto your system first otherwise ag.vim plugin won't find the executable.
+Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
 
 # TODO
 * Make script less sucky e.g. remove fatal warnings
