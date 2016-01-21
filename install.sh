@@ -8,6 +8,7 @@ echo ""
 cp ~/.vimrc ~/old.vimrc
 # copy .bashrc to old.bashrc
 cp ~/.bashrc ~/old.bashrc
+# copy .tmux.conf to old.tmux.conf
 echo "Done copying"
 echo ""
 
@@ -18,6 +19,8 @@ echo ""
 cp ./vimrc ~/.vimrc
 # replace .bashrc with repo version of bashrc
 cp ./bashrc ~/.bashrc
+# replace .tmux.conf with repo version of tmux.conf
+cp ./tmux.conf ~/.tmux.conf
 echo "Done replacing"
 echo ""
 
