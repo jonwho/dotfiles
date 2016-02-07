@@ -17,10 +17,11 @@ What I use for Ubuntu/Arch Linux
 * [vim-airline](https://github.com/bling/vim-airline)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [syntastic](https://github.com/scrooloose/syntastic)
-* [vim-easytags](https://github.com/xolox/vim-easytags.git)
-* [vim-misc](https://github.com/xolox/vim-misc.git)
-* [vim-rails](https://github.com/tpope/vim-rails.git)
-* [ag](https://github.com/rking/ag.vim.git)
+* [vim-easytags](https://github.com/xolox/vim-easytags)
+* [vim-misc](https://github.com/xolox/vim-misc)
+* [vim-rails](https://github.com/tpope/vim-rails)
+* [ag](https://github.com/rking/ag.vim)
+* [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 # Install

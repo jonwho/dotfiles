@@ -51,6 +51,7 @@ git clone https://github.com/xolox/vim-easytags.git
 git clone https://github.com/xolox/vim-misc.git
 git clone https://github.com/tpope/vim-rails.git
 git clone https://github.com/rking/ag.vim.git
+git clone https://github.com/leafgarland/typescript-vim.git
 
 echo "Done installing vim plugins"
 echo ""
