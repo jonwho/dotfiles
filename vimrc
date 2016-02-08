@@ -32,6 +32,7 @@ set noincsearch			" don't go immediately to pattern typed
 set nohlsearch			" don't highlight search terms
 set backspace=indent,eol,start  " backspace over everything
 set fileformats=unix,dos,mac    " open files from mac/dos
+set autoread                    " refresh buffer (file) content if there are changes  
 
 set ruler	        " show line number
 "set nu 		" line numbers on
