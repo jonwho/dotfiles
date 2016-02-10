@@ -63,9 +63,9 @@ set autoindent	        " autoindent on
 set formatoptions=tcrq	" how to auto indent, see fo-table for description
 
 " Expand tabs in these files to spaces
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts} set expandtab
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts} set tabstop=2
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake} set expandtab
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake} set shiftwidth=2
+au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake} set tabstop=2
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
