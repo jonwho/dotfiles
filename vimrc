@@ -183,3 +183,9 @@ if !exists("g:ycm_semantic_triggers")
   let g:ycm_semantic_triggers = {}
 endif
 let g:ycm_semantic_triggers['typescript'] = ['.']
+
+" Code folding!
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
