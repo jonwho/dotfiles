@@ -64,5 +64,9 @@ ctags -R .
 Must install separately onto your system first otherwise ag.vim plugin won't find the executable.
 Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
 
+# tmux copy&paste
+Referencing thoughtbot [post](https://robots.thoughtbot.com/tmux-copy-paste-on-os-x-a-better-future) this setup requires reattach-to-user-namespace command.
+This is a OSX fix and there may be a more general solution for Linux. Run ```brew install reattach-to-user-namespace``` to grab this for OSX.
+
 # TODO
 * Make script less sucky e.g. remove fatal warnings
