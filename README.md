@@ -3,7 +3,7 @@ dotfiles
 
 What I use for Ubuntu/Arch Linux
 
-# Vim
+# vim
 * [pathogen](https://github.com/tpope/vim-pathogen)
 * [ctrlp](https://github.com/kien/ctrlp.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
@@ -63,6 +63,9 @@ ctags -R .
 # Ag aka the silver searcher
 Must install separately onto your system first otherwise ag.vim plugin won't find the executable.
 Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
+
+# tmux
+Use [tpm](https://github.com/tmux-plugins/tpm) to manage plugins.
 
 # tmux copy&paste
 Using [tmux-yank](https://github.com/tmux-plugins/tmux-yank) through .tmux.conf plugin setup.
