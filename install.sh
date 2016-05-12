@@ -53,6 +53,8 @@ git clone https://github.com/tpope/vim-rails.git
 git clone https://github.com/rking/ag.vim.git
 git clone https://github.com/leafgarland/typescript-vim.git
 git clone https://github.com/ntpeters/vim-better-whitespace.git
+git clone https://github.com/pangloss/vim-javascript.git
+git clone https://github.com/mxw/vim-jsx.git
 
 echo "Done installing vim plugins"
 echo ""

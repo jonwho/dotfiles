@@ -192,3 +192,9 @@ set foldlevel=2
 
 " Highlight bad whitespace
 highligh ExtraWhitespace ctermbg=blue
+
+" vim-javascript config
+let g:javascript_enable_domhtmlcss=1
+
+" vim-jsx config
+let g:jsx_ext_required=1 " Enables jsx syntax highlighting only for .jsx files

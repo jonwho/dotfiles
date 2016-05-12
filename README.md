@@ -23,6 +23,8 @@ What I use for Ubuntu/Arch Linux
 * [ag](https://github.com/rking/ag.vim)
 * [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
+* [vim-javascript](https://github.com/pangloss/vim-javascript)
+* [vim-jsx](https://github.com/mxw/vim-jsx)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 # Install
