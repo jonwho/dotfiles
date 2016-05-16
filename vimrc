@@ -172,8 +172,8 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
 " Run 'npm install -g jshint' to put jshint in PATH
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_html_tidy_ignore_errors = ["proprietary attribute \"ng-"]
+let g:syntastic_javascript_checkers = ['jshint', 'eslint']
+let g:syntastic_html_tidy_ignore_errors = ["proprietary attribute \"ng-"] " Gets rid of a few AngularJS specific lints
 
 " Configure Ag to always search from project root instead of cwd unless dir specified
 let g:ag_working_path_mode="r"
