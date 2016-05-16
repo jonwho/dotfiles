@@ -75,5 +75,13 @@ Using [tmux-yank](https://github.com/tmux-plugins/tmux-yank) through .tmux.conf 
 For OSX run ```brew install reattach-to-user-namespace``` to grab this for OSX.
 For Linux use xclip, install it however for your distro.
 
+# Babel/eslint/es6/React and etc
+Get these globally.
+```
+npm install -g eslint
+npm install -g babel-eslint
+npm install -g eslint-plugin-react
+```
+
 # TODO
 * Make script less sucky e.g. remove fatal warnings
