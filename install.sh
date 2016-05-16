@@ -9,6 +9,9 @@ cp ~/.vimrc ~/old.vimrc
 # copy .bashrc to old.bashrc
 cp ~/.bashrc ~/old.bashrc
 # copy .tmux.conf to old.tmux.conf
+cp ~/.tmux.conf ~/old.tmux.conf
+# copy .jshintrc to old.jshintrc
+cp ~/.jshintrc ~/old.jshintrc
 echo "Done copying"
 echo ""
 
@@ -21,6 +24,8 @@ cp ./vimrc ~/.vimrc
 cp ./bashrc ~/.bashrc
 # replace .tmux.conf with repo version of tmux.conf
 cp ./tmux.conf ~/.tmux.conf
+# replace .jshintrc with repo version of jshintrc
+cp ./jshintrc ~/.jshintrc
 echo "Done replacing"
 echo ""
 
