@@ -62,10 +62,16 @@ set autoindent	        " autoindent on
 " set smartindent         " next line of indention based on previous line
 set formatoptions=tcrq	" how to auto indent, see fo-table for description
 
+
 " Expand tabs in these files to spaces
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake,css,scss} set expandtab
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake,css,scss} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake,css,scss} set tabstop=2
+" au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake,css,scss} set expandtab
+" au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake,css,scss} set shiftwidth=2
+" au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake,css,scss} set tabstop=2
+
+" Screw it. 2 SPACES ALL!
+set expandtab
+set shiftwidth=2
+set tabstop=2
 
 " Do not expand tabs in assembly file.  Make them 8 chars wide.
 au BufRead,BufNewFile *.s set noexpandtab
@@ -172,7 +178,7 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
 " Run 'npm install -g jshint' to put jshint in PATH
-let g:syntastic_javascript_checkers = ['jshint', 'eslint']
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_html_tidy_ignore_errors = ["proprietary attribute \"ng-"] " Gets rid of a few AngularJS specific lints
 
 " Configure Ag to always search from project root instead of cwd unless dir specified

@@ -1,7 +1,6 @@
 #!/bin/bash
 
-echo "Copying current .vimrc and .bashrc files to old.vimrc and old.bashrc
-respectively"
+echo "Copying current dotfiles to old.{dotfile} respectively"
 echo ""
 
 # copy .vimrc to old.vimrc
@@ -10,12 +9,12 @@ cp ~/.vimrc ~/old.vimrc
 cp ~/.bashrc ~/old.bashrc
 # copy .tmux.conf to old.tmux.conf
 cp ~/.tmux.conf ~/old.tmux.conf
-# copy .jshintrc to old.jshintrc
-cp ~/.jshintrc ~/old.jshintrc
+# copy .eslintrc.json to old.eslintrc.json
+cp ~/.eslintrc.json ~/eslintrc.json
 echo "Done copying"
 echo ""
 
-echo "Replacing .vimrc and .bashrc with repo version"
+echo "Replacing dotfiles repo version"
 echo ""
 
 # replace .vimrc with repo of vimrc
@@ -24,8 +23,8 @@ cp ./vimrc ~/.vimrc
 cp ./bashrc ~/.bashrc
 # replace .tmux.conf with repo version of tmux.conf
 cp ./tmux.conf ~/.tmux.conf
-# replace .jshintrc with repo version of jshintrc
-cp ./jshintrc ~/.jshintrc
+# replace .eslintrc.json with repo version of eslintrc.json
+cp ./eslintrc.json ~/.eslintrc.json
 echo "Done replacing"
 echo ""
 
