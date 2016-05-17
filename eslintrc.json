@@ -35,6 +35,8 @@
   "globals": {
     "React": true,
     "Angular": true,
-    "angular": true
+    "angular": true,
+    "console": true,
+    "$": true
   }
 }
