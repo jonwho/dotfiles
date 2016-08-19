@@ -25,9 +25,15 @@ What I use for Ubuntu/Arch Linux
 * [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
 * [vim-jsx](https://github.com/mxw/vim-jsx)
+* [vim-surround](https://github.com/tpope/vim-surround)
+* [vim-repeat](https://github.com/tpope/vim-repeat)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 # Install
+If you have multi-factor auth for GitHub setup you'll have to
+change each git repo link to ssh from https and set your SSH Key for
+[GitHub](https://help.github.com/articles/generating-an-ssh-key/)
+
 ```shell
 git clone https://github.com/jonwho/dotfiles ~/jonwho-dotfiles
 cd ~/jonwho-dotfiles

@@ -59,6 +59,8 @@ git clone https://github.com/leafgarland/typescript-vim.git
 git clone https://github.com/ntpeters/vim-better-whitespace.git
 git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/mxw/vim-jsx.git
+git clone https://github.com/mxw/vim-surround.git
+git clone https://github.com/mxw/vim-repeat.git
 
 echo "Done installing vim plugins"
 echo ""
