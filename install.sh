@@ -61,6 +61,7 @@ git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/mxw/vim-jsx.git
 git clone https://github.com/mxw/vim-surround.git
 git clone https://github.com/mxw/vim-repeat.git
+git clone https://github.com/isRuslan/vim-es6.git
 
 echo "Done installing vim plugins"
 echo ""
