@@ -204,3 +204,6 @@ let g:javascript_enable_domhtmlcss=1
 
 " vim-jsx config
 let g:jsx_ext_required=1 " Enables jsx syntax highlighting only for .jsx files
+
+" vim-es6 & vim-javascript? this sets js highlighting for .es6
+au BufReadPost *.es6 set syntax=javascript
