@@ -28,6 +28,7 @@ What I use for Ubuntu/Arch Linux
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-es6](https://github.com/isRuslan/vim-es6)
+* [html5](https://github.com/othree/html5.vim)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 # Install
