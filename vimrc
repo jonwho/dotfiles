@@ -181,6 +181,9 @@ let g:syntastic_check_on_wq=0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_html_tidy_ignore_errors = ["proprietary attribute \"ng-"] " Gets rid of a few AngularJS specific lints
 
+" Run gem install rubocop
+let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+
 " Configure Ag to always search from project root instead of cwd unless dir specified
 let g:ag_working_path_mode="r"
 
