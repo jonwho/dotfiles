@@ -1,11 +1,11 @@
 dotfiles
 ========
 
-What I use for Ubuntu/Arch Linux
+What I use for Mac/Ubuntu/ArchLinux
 
 # vim
-* [pathogen](https://github.com/tpope/vim-pathogen)
-* [ctrlp](https://github.com/kien/ctrlp.vim)
+* [vim-plug](https://github.com/junegunn/vim-plug)
+* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [youcompleteme](https://github.com/Valloric/YouCompleteMe)
 * [easymotion](https://github.com/Lokaltog/vim-easymotion)
@@ -31,10 +31,8 @@ What I use for Ubuntu/Arch Linux
 * [html5](https://github.com/othree/html5.vim)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
-# Install
-If you have multi-factor auth for GitHub setup you'll have to
-change each git repo link to ssh from https and set your SSH Key for
-[GitHub](https://help.github.com/articles/generating-an-ssh-key/)
+Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug). Run the install script to autoinstall plugins on Vim load. `youcompleteme` and `ag`
+have post-install steps that need to be ran to build YCM and install required binaries; refer to respective repos for more.
 
 ```shell
 git clone https://github.com/jonwho/dotfiles ~/jonwho-dotfiles
@@ -76,7 +74,7 @@ Must install separately onto your system first otherwise ag.vim plugin won't fin
 Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
 
 # tmux
-Use [tpm](https://github.com/tmux-plugins/tpm) to manage plugins.
+Use [tpm](https://github.com/tmux-plugins/tpm) to manage tmux plugins.
 
 # tmux copy&paste
 Using [tmux-yank](https://github.com/tmux-plugins/tmux-yank) through .tmux.conf plugin setup.
