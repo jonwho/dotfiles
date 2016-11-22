@@ -39,30 +39,30 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 cd ~/.vim/bundle
 
 # add the plugins
-git clone https://github.com/kien/ctrlp.vim
-git clone https://github.com/scrooloose/nerdtree
-git clone https://github.com/Lokaltog/vim-easymotion
-#git clone https://github.com/fholgado/minibufexpl.vim
-git clone https://github.com/tpope/vim-endwise
-git clone https://github.com/Raimondi/delimitMate
-git clone https://github.com/jistr/vim-nerdtree-tabs.git
-git clone https://github.com/nanotech/jellybeans.vim.git
-git clone https://github.com/scrooloose/nerdcommenter.git
-git clone https://github.com/bling/vim-airline.git
-git clone https://github.com/tpope/vim-fugitive.git
-git clone https://github.com/scrooloose/syntastic.git
-git clone https://github.com/xolox/vim-easytags.git
-git clone https://github.com/xolox/vim-misc.git
-git clone https://github.com/tpope/vim-rails.git
-git clone https://github.com/rking/ag.vim.git
-git clone https://github.com/leafgarland/typescript-vim.git
-git clone https://github.com/ntpeters/vim-better-whitespace.git
-git clone https://github.com/pangloss/vim-javascript.git
-git clone https://github.com/mxw/vim-jsx.git
-git clone https://github.com/mxw/vim-surround.git
-git clone https://github.com/mxw/vim-repeat.git
-git clone https://github.com/isRuslan/vim-es6.git
-git clone https://github.com/othree/html5.vim.git
+#git clone https://github.com/kien/ctrlp.vim
+#git clone https://github.com/scrooloose/nerdtree
+#git clone https://github.com/Lokaltog/vim-easymotion
+##git clone https://github.com/fholgado/minibufexpl.vim
+#git clone https://github.com/tpope/vim-endwise
+#git clone https://github.com/Raimondi/delimitMate
+#git clone https://github.com/jistr/vim-nerdtree-tabs.git
+#git clone https://github.com/nanotech/jellybeans.vim.git
+#git clone https://github.com/scrooloose/nerdcommenter.git
+#git clone https://github.com/bling/vim-airline.git
+#git clone https://github.com/tpope/vim-fugitive.git
+#git clone https://github.com/scrooloose/syntastic.git
+#git clone https://github.com/xolox/vim-easytags.git
+#git clone https://github.com/xolox/vim-misc.git
+#git clone https://github.com/tpope/vim-rails.git
+#git clone https://github.com/rking/ag.vim.git
+#git clone https://github.com/leafgarland/typescript-vim.git
+#git clone https://github.com/ntpeters/vim-better-whitespace.git
+#git clone https://github.com/pangloss/vim-javascript.git
+#git clone https://github.com/mxw/vim-jsx.git
+#git clone https://github.com/mxw/vim-surround.git
+#git clone https://github.com/mxw/vim-repeat.git
+#git clone https://github.com/isRuslan/vim-es6.git
+#git clone https://github.com/othree/html5.vim.git
 
 echo "Done installing vim plugins"
 echo ""
