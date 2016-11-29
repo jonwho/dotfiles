@@ -163,6 +163,10 @@ autocmd vimenter * if !argc() | NERDTree | endif
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
+" Don't run CtrlP for .gitignore'd files
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+
 " Put cursor on a line between { and }
 let delimitMate_expand_cr = 1
 
