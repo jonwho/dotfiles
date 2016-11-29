@@ -38,6 +38,8 @@ Plug 'isRuslan/vim-es6'
 Plug 'othree/html5.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'elixir-lang/vim-elixir'
 call plug#end()
 
 "=============================================================================
