@@ -29,6 +29,8 @@ What I use for Mac/Ubuntu/ArchLinux
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-es6](https://github.com/isRuslan/vim-es6)
 * [html5](https://github.com/othree/html5.vim)
+* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
+* [vim-elixir](https://github.com/elixir/vim-elixir)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug). Run the install script to autoinstall plugins on Vim load. `youcompleteme` and `ag`
