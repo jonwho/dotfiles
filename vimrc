@@ -40,6 +40,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'elixir-lang/vim-elixir'
+Plug 'jpalardy/vim-slime'
 call plug#end()
 
 "=============================================================================
@@ -239,3 +240,6 @@ let g:jsx_ext_required=1 " Enables jsx syntax highlighting only for .jsx files
 
 " vim-es6 & vim-javascript? this sets js highlighting for .es6
 au BufReadPost *.es6 set syntax=javascript
+
+" default tmux as the slime target (SLIME is a REPL)
+let g:slime_target="tmux"

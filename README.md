@@ -31,6 +31,7 @@ What I use for Mac/Ubuntu/ArchLinux
 * [html5](https://github.com/othree/html5.vim)
 * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 * [vim-elixir](https://github.com/elixir/vim-elixir)
+* [vim-slime](https://github.com/jpalardy/vim-slime)
 * [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug). Run the install script to autoinstall plugins on Vim load. `youcompleteme` and `ag`
@@ -90,6 +91,14 @@ npm install -g eslint
 npm install -g babel-eslint
 npm install -g eslint-plugin-react
 ```
+
+# Using vim-slime
+Open up two panes in a window (if you want REPL side-by-side)
+Open the REPL in the pane you wish to send text to.
+In that pane run `echo $TMUX_PANE` or `tmux run "echo #{pane_id}"` to get the pane id.
+In the pane with your vim editor run `:SlimeConfig` to name your selected pane. Then in the following prompt put in the pane id you found from earlier.
+Now highlight the text you want to REPL then press <C-c><C-c> to send it over. Friggin' cool!
+Works really well for CoffeeScript, Ruby, OCaml, Python, Elixir. :toocool:
 
 # TODO
 * Make script less sucky e.g. remove fatal warnings
