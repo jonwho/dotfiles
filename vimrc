@@ -166,6 +166,20 @@ let g:ctrlp_cmd = 'CtrlP'
 " Don't run CtrlP for .gitignore'd files
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
+" NERDTree and CtrlP working together!
+" Using the two options below NERDTree will dynamically change root with CWD
+" CtrlP will read root from outside of CWD
+" This means that CtrlP search will now be project focused and instead of
+" reading up until it finds root marker which is commonly .git/ for my work
+" but also includes .hg, .svn, .bzr and _darcs as markers
+let g:NERDTreeChDirMode = 2 " CWD changes whenever the root is changed
+let g:ctrlp_working_path_mode = 'rw' " Find root from CWD outside of CtrlP
+" The following root markers are a custom setting for work because I am
+" working in a unirepo where there exists only one .git/ for 30+ projects
+let g:ctrlp_root_markers = ['.gitignore', 'README.md', 'Makefile']
+
+
+
 " Put cursor on a line between { and }
 let delimitMate_expand_cr = 1
 
