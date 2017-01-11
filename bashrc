@@ -84,6 +84,7 @@ if [ -x /usr/bin/dircolors ]; then
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'
+  eval $(dircolors -b $HOME/.dircolors)
 fi
 
 # some more ls aliases
@@ -127,4 +128,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
-eval $(dircolors -b $HOME/.dircolors)
+
+source ~/.git-prompt.sh
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
