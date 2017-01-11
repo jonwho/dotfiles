@@ -80,13 +80,13 @@ set bg=dark
 "=============================================================================
 " Formating Options
 "=============================================================================
+set colorcolumn=80
 set bs=2	              " fix backspacing in insert mode
 set autoindent	        " autoindent on
 " smartindent is an old script! it was meant to be smart complement to
 " autoindent but it keeps fooking up python and ruby comments
 "set smartindent         " next line of indention based on previous line
 set formatoptions=tcrq	" how to auto indent, see fo-table for description
-
 
 " Expand tabs in these files to spaces
 " au BufRead,BufNewFile *.{c,h,java,hpp,cpp,rb,py,erb,js,coffee,html,ts,rake,css,scss} set expandtab
@@ -134,18 +134,15 @@ set omnifunc=syntaxcomplete#Complete
 :set wildmode=list      " show list and complete the first match
 :set nowritebackup      " No intermidate files when saving
 
-:set wildignore=*.o,*.bak,*.data,*.class
+:set wildignore=*.so,*.swp,*.swo,*.zip,*.o,*.bak,*.data,*.class
 
 autocmd BufNewFile [Mm]akefile* set formatoptions=croql comments=:#
 autocmd BufNewFile .vimrc,*.vim set formatoptions=croql comments=:\"
 autocmd FileType c,cpp,java set mps+==:;
-
-" Spelling toggle via F10 and F11
-map <F10> <Esc>setlocal spell spelllang=en_us<CR>
-map <F11> <Esc>setlocal nospell<CR>
-
-"setlocal textwidth=80           " used for text wrapping
-"match ErrorMsg '\%>80v.+'
+autocmd BufRead,BufNewFile *.* setlocal spell " Turn on spellcheck
+set complete+=kspell                          " Spell completion
+" Marks word under cursor as correct in spellfile - `zg`
+" Marks word under cursor as incorrect in spellfile - `zw`
 
 "=============================================================================
 " For vim plugins
@@ -169,7 +166,6 @@ let g:ctrlp_cmd = 'CtrlP'
 " Don't run CtrlP for .gitignore'd files
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
-
 " Put cursor on a line between { and }
 let delimitMate_expand_cr = 1
 
@@ -182,7 +178,8 @@ let delimitMate_expand_cr = 1
 " Highlight current line
 :set cursorline
 :hi CursorLine cterm=NONE ctermbg=red ctermfg=white guibg=#ed00f5 guifg=white
-:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR> " Toggle the cursor highlight with \c
+" Toggle the cursor highlight with \c
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 " Enable NerdTreeTabs on vim startup
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -230,7 +227,7 @@ set nofoldenable
 set foldlevel=2
 
 " Highlight bad whitespace
-highligh ExtraWhitespace ctermbg=blue
+highlight ExtraWhitespace ctermbg=blue
 
 " vim-javascript config
 let g:javascript_enable_domhtmlcss=1
