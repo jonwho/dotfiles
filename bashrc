@@ -92,6 +92,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias vi='nvim -v'
+alias git=hub
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ls='ls -G' # OSX has no command dircolor
 fi
@@ -120,9 +121,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# make vim default editor
+# make nvim default editor
 export EDITOR='nvim'
-# make vim default visual
+# make nvim default visual
 export VISUAL='nvim'
 
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
