@@ -91,11 +91,9 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias vi='nvim -v'
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  alias vi='nvim -v'
   alias ls='ls -G' # OSX has no command dircolor
-else
-  alias vi='vim'
 fi
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -123,12 +121,11 @@ if ! shopt -oq posix; then
 fi
 
 # make vim default editor
-export EDITOR='vim'
+export EDITOR='nvim'
 # make vim default visual
-export VISUAL='vim'
+export VISUAL='nvim'
 
 LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
 
 source ~/.git-prompt.sh
 PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-
