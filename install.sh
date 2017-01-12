@@ -5,6 +5,8 @@ echo ""
 
 # copy .vimrc to old.vimrc
 cp ~/.vimrc ~/old.vimrc
+# copy init.vim to old.init.vim
+cp ~/.config/nvim/init.vim ~/old.init.vim
 # copy .bashrc to old.bashrc
 cp ~/.bashrc ~/old.bashrc
 # copy .tmux.conf to old.tmux.conf
@@ -17,8 +19,10 @@ echo ""
 echo "Replacing dotfiles repo version"
 echo ""
 
-# replace .vimrc with repo of vimrc
+# replace .vimrc with repo version of vimrc
 cp ./vimrc ~/.vimrc
+# replace .init.vim with repo version of vimrc
+cp ./vimrc ~/.config/nvim/init.vim
 # replace .bashrc with repo version of bashrc
 cp ./bashrc ~/.bashrc
 # replace .tmux.conf with repo version of tmux.conf

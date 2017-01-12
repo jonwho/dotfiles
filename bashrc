@@ -91,8 +91,8 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias vi='nvim -v'
-alias git=hub
+alias vi='nvim'
+alias git='hub'
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ls='ls -G' # OSX has no command dircolor
 fi
