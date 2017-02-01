@@ -41,6 +41,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'elixir-lang/vim-elixir'
 Plug 'jpalardy/vim-slime'
+Plug 'henrik/vim-indexed-search'
+Plug 'myusuf3/numbers.vim'
 call plug#end()
 
 "=============================================================================
@@ -124,8 +126,6 @@ set cin
 " need indent keyword so that python/ruby comments format properly
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
-" compile C file and run a.out with one cmd :make
-set makeprg=gcc\ %\ &&\ ./a.out
 
 " code folding!
 set foldmethod=indent

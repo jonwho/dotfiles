@@ -32,7 +32,9 @@ What I use for Mac/Ubuntu/ArchLinux
 * [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 * [vim-elixir](https://github.com/elixir/vim-elixir)
 * [vim-slime](https://github.com/jpalardy/vim-slime)
-* [how to actually use vim well](http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
+* [vim-indexed-search](https://github.com/henrik/vim-indexed-search)
+* [numbers.vim](https://github.com/myusuf3/numbers.vim)
+* [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug). Run the install script to autoinstall plugins on Vim load. `youcompleteme` and `ag`
 have post-install steps that need to be ran to build YCM and install required binaries; refer to respective repos for more.
