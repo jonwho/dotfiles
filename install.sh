@@ -22,7 +22,7 @@ echo ""
 # replace .vimrc with repo version of vimrc
 cp ./vimrc ~/.vimrc
 # replace .init.vim with repo version of vimrc
-cp ./vimrc ~/.config/nvim/init.vim
+cp ./init.vim ~/.config/nvim/init.vim
 # replace .bashrc with repo version of bashrc
 cp ./bashrc ~/.bashrc
 # replace .tmux.conf with repo version of tmux.conf

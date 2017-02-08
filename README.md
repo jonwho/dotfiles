@@ -36,8 +36,14 @@ What I use for Mac/Ubuntu/ArchLinux
 * [numbers.vim](https://github.com/myusuf3/numbers.vim)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
-Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug). Run the install script to autoinstall plugins on Vim load. `youcompleteme` and `ag`
-have post-install steps that need to be ran to build YCM and install required binaries; refer to respective repos for more.
+Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).
+Run the install script to autoinstall plugins on Vim load. `youcompleteme` and
+`ag` have post-install steps that need to be ran to build YCM and install
+required binaries; refer to respective repos for more.
+
+This repo's vimrc will be without plugins to keep vim as vanilla as possible.
+Plugins are available in init.vim for nvim but there are quite a few so if
+working in large unirepo you will notice a significant slowdown.
 
 ```shell
 git clone https://github.com/jonwho/dotfiles ~/jonwho-dotfiles
@@ -47,9 +53,8 @@ chmod +x install.sh
 ```
 
 ## YouCompleteMe
-YouCompleteMe is a great code completion plugin but requires some
-extra work to install. Refer to
-[https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) for installation notes.
+YouCompleteMe is a great code completion plugin but requires some extra work to
+install. Refer to [https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) for installation notes.
 
 As of Ubuntu 14.04 LTS can now install YouCompleteMe with the package manager.
 ```
