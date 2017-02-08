@@ -1,9 +1,16 @@
-dotfiles
-========
+# dotfiles
 
 What I use for Mac/Ubuntu/ArchLinux
 
-# vim
+## Install
+```shell
+git clone https://github.com/jonwho/dotfiles ~/jonwho-dotfiles
+cd ~/jonwho-dotfiles
+chmod +x install.sh
+./install.sh
+```
+
+## vim
 * [vim-plug](https://github.com/junegunn/vim-plug)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
@@ -54,13 +61,6 @@ tic $TERM.ti
 See [this](https://github.com/neovim/neovim/issues/2048#issuecomment-78045837)
 for more info.
 
-```shell
-git clone https://github.com/jonwho/dotfiles ~/jonwho-dotfiles
-cd ~/jonwho-dotfiles
-chmod +x install.sh
-./install.sh
-```
-
 ## YouCompleteMe
 YouCompleteMe is a great code completion plugin but requires some extra work to
 install. Refer to [https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) for installation notes.
@@ -82,26 +82,26 @@ makepkg -s
 sudo pacman -U vim-youcompleteme-git-*.tar.xz
 ```
 
-# Quick ctags note
+## Quick ctags note
 Need to run ctags command in the project root to update .vimtags so vim knows
 where them tags at.
 ```
 ctags -R .
 ```
 
-# Ag aka the silver searcher
+## Ag aka the silver searcher
 Must install separately onto your system first otherwise ag.vim plugin won't
 find the executable. Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
 
-# tmux
+## tmux
 Use [tpm](https://github.com/tmux-plugins/tpm) to manage tmux plugins.
 
-# tmux copy&paste
+## tmux copy&paste
 Using [tmux-yank](https://github.com/tmux-plugins/tmux-yank) through .tmux.conf
 plugin setup. For OSX run `brew install reattach-to-user-namespace` to grab this
 for OSX. For Linux use xclip, install it however for your distro.
 
-# Babel/eslint/es6/React and etc
+## Babel/eslint/es6/React and etc
 Get these globally.
 ```
 npm install -g eslint
@@ -109,7 +109,7 @@ npm install -g babel-eslint
 npm install -g eslint-plugin-react
 ```
 
-# Using vim-slime
+## Using vim-slime
 * Open up two panes in a window (if you want REPL side-by-side)
 * Open the REPL in the pane you wish to send text to.
 * In that pane run `echo $TMUX_PANE` or `tmux run "echo #{pane_id}"`
@@ -121,5 +121,5 @@ over. Friggin' cool!
 
 Works really well for CoffeeScript, Ruby, OCaml, Python, Elixir. :toocool:
 
-# TODO
+## TODO
 * Make script less sucky e.g. remove fatal warnings
