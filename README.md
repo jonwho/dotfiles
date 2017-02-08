@@ -83,22 +83,23 @@ sudo pacman -U vim-youcompleteme-git-*.tar.xz
 ```
 
 # Quick ctags note
-Need to run ctags command in the project root to update .vimtags so vim knows where them tags at.
+Need to run ctags command in the project root to update .vimtags so vim knows
+where them tags at.
 ```
 ctags -R .
 ```
 
 # Ag aka the silver searcher
-Must install separately onto your system first otherwise ag.vim plugin won't find the executable.
-Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
+Must install separately onto your system first otherwise ag.vim plugin won't
+find the executable. Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
 
 # tmux
 Use [tpm](https://github.com/tmux-plugins/tpm) to manage tmux plugins.
 
 # tmux copy&paste
-Using [tmux-yank](https://github.com/tmux-plugins/tmux-yank) through .tmux.conf plugin setup.
-For OSX run ```brew install reattach-to-user-namespace``` to grab this for OSX.
-For Linux use xclip, install it however for your distro.
+Using [tmux-yank](https://github.com/tmux-plugins/tmux-yank) through .tmux.conf
+plugin setup. For OSX run `brew install reattach-to-user-namespace` to grab this
+for OSX. For Linux use xclip, install it however for your distro.
 
 # Babel/eslint/es6/React and etc
 Get these globally.
@@ -111,9 +112,12 @@ npm install -g eslint-plugin-react
 # Using vim-slime
 * Open up two panes in a window (if you want REPL side-by-side)
 * Open the REPL in the pane you wish to send text to.
-* In that pane run `echo $TMUX_PANE` or `tmux run "echo #{pane_id}"` to get the pane id.
-* In the pane with your vim editor run `:SlimeConfig` to name your selected pane. Then in the following prompt put in the pane id you found from earlier.
-* Now highlight the text you want to REPL then press `<C-c><C-c>` to send it over. Friggin' cool!
+* In that pane run `echo $TMUX_PANE` or `tmux run "echo #{pane_id}"`
+to get the pane id.
+* In the pane with your vim editor run `:SlimeConfig` to name your selected
+pane. Then in the following prompt put in the pane id you found from earlier.
+* Now highlight the text you want to REPL then press `<C-c><C-c>` to send it
+over. Friggin' cool!
 
 Works really well for CoffeeScript, Ruby, OCaml, Python, Elixir. :toocool:
 
