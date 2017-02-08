@@ -45,6 +45,15 @@ This repo's vimrc will be without plugins to keep vim as vanilla as possible.
 Plugins are available in init.vim for nvim but there are quite a few so if
 working in large unirepo you will notice a significant slowdown.
 
+To fix movement between vim panes on nvim when using <C-h> and iterm terminal
+you might need to change the keybind with the following:
+```shell
+infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
+tic $TERM.ti
+```
+See [this](https://github.com/neovim/neovim/issues/2048#issuecomment-78045837)
+for more info.
+
 ```shell
 git clone https://github.com/jonwho/dotfiles ~/jonwho-dotfiles
 cd ~/jonwho-dotfiles
