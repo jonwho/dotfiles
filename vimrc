@@ -118,3 +118,68 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-l> <C-W>l
 
+"=============================================================================
+" Plugins
+"=============================================================================
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'bling/vim-airline'
+Plug 'rking/ag.vim'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'flazz/vim-colorschemes'
+call plug#end()
+
+"=============================================================================
+" Plugin config
+"=============================================================================
+" refer to ~/.vim/plugged/vim-colorschemes/color/ for more
+colorscheme molokai
+
+" shortcut to toggle NERDTree
+map <C-n> :NERDTreeToggle <CR>
+" show hidden files in NERDTree on startup <shift>+<i> to toggle
+let NERDTreeShowHidden=1
+
+" autostart NERDTree when vim starts up if no files specified
+au vimenter * if !argc() | NERDTree | endif
+
+" enable NerdTreeTabs on vim startup
+let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_new_tab=1
+
+" shortcut for CtrlP
+let g:ctrlp_map='<C-p>'
+let g:ctrl_cmd='CtrlP'
+
+" don't run CtrlP for .gitignore'd files
+let g:ctrlp_user_command=
+  \ ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" NERDTree and CtrlP working together!
+" using the two options below NERDTree will dynamically change root with CWD
+" CtrlP will read root from outside of CWD
+" this means that CtrlP search will now be project focused and instead of
+" reading up until it finds root marker which is commonly .git/ for my work
+" but also includes .hg, .svn, .bzr and _darcs as markers
+let g:NERDTreeChDirMode=2 " CWD changes whenever the root is changed
+let g:ctrlp_working_path_mode='rw' " Find root from CWD outside of CtrlP
+" the following root markers are a custom setting for work because I am
+" working in a unirepo where there exists only one .git/ for 30+ projects
+let g:ctrlp_root_markers=['.gitignore', 'README.md', 'Makefile']
+
+" configure Ag to always search from project root instead of cwd
+let g:ag_working_path_mode="r"
+
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0

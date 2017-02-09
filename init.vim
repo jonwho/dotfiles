@@ -5,46 +5,6 @@ set nocompatible    " this line must be first or the changes you are expecting
 
 filetype off
 
-" auto install vim-plug and plugins listed in your vimrc if haven't already
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  au VimEnter * PlugInstall | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
-Plug 'Lokaltog/vim-easymotion'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'Yggdroot/indentline'
-Plug 'Raimondi/delimitMate'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'bling/vim-airline'
-Plug 'xolox/vim-easytags'
-Plug 'xolox/vim-misc'
-Plug 'rking/ag.vim'
-Plug 'leafgarland/typescript-vim'
-Plug 'ntpeters/vim-better-whitespace'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'isRuslan/vim-es6'
-Plug 'othree/html5.vim'
-Plug 'nanotech/jellybeans.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'kchmck/vim-coffee-script'
-Plug 'elixir-lang/vim-elixir'
-Plug 'jpalardy/vim-slime'
-Plug 'henrik/vim-indexed-search'
-Plug 'myusuf3/numbers.vim'
-call plug#end()
-
 "=============================================================================
 " General Settings
 "=============================================================================
@@ -69,7 +29,6 @@ set nojoinspaces    " don't add white space when I don't tell you to
 set showmatch       " ensure Dyck language
 set incsearch       " incremental searching
 set nohlsearch      " meh
-set bg=dark
 
 set mouse=a         " enable the mouse (enables clicking and scrolling)
 set mousehide	      " hides the mouse pointer when typing characters
@@ -159,8 +118,55 @@ map <C-k> <C-W>k
 map <C-l> <C-W>l
 
 "=============================================================================
-" For vim plugins
+" Plugins
 "=============================================================================
+" auto install vim-plug and plugins listed in your vimrc if haven't already
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  au VimEnter * PlugInstall | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'Valloric/YouCompleteMe'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'Yggdroot/indentline'
+Plug 'Raimondi/delimitMate'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'bling/vim-airline'
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
+Plug 'rking/ag.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'ntpeters/vim-better-whitespace'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'isRuslan/vim-es6'
+Plug 'othree/html5.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'elixir-lang/vim-elixir'
+Plug 'jpalardy/vim-slime'
+Plug 'henrik/vim-indexed-search'
+Plug 'myusuf3/numbers.vim'
+Plug 'flazz/vim-colorschemes'
+call plug#end()
+
+"=============================================================================
+" Plugin config
+"=============================================================================
+" refer to ~/.vim/plugged/vim-colorschemes/color/ for more themes
+" or :colorscheme <tab> to see list
+colorscheme pf_earth
+
 " shortcut to toggle NERDTree
 map <C-n> :NERDTreeToggle <CR>
 " show hidden files in NERDTree on startup <shift>+<i> to toggle
@@ -194,9 +200,6 @@ let g:ctrlp_root_markers=['.gitignore', 'README.md', 'Makefile']
 
 " put cursor on a line between { and }
 let delimitMate_expand_cr=1
-
-" use jellybeans theme
-color jellybeans
 
 " enable NerdTreeTabs on vim startup
 let g:nerdtree_tabs_open_on_console_startup=1
@@ -243,6 +246,9 @@ au BufReadPost *.es6 set syntax=javascript
 
 " default tmux as the slime target (SLIME is a REPL)
 let g:slime_target="tmux"
+
+" set easytags to update tags asynchronously else it will block vim
+let g:easytags_async=1
 
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")
