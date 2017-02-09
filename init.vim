@@ -1,4 +1,4 @@
-" ~/.vimrc
+" ~/.config/nvim/init.vim
 
 set nocompatible    " this line must be first or the changes you are expecting
                     " may not be the changes that occur
@@ -120,14 +120,14 @@ map <C-l> <C-W>l
 "=============================================================================
 " Plugins
 "=============================================================================
-" auto install vim-plug and plugins listed in your vimrc if haven't already
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+" auto install vim-plug and plugins listed in your init.vim if haven't already
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   au VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
@@ -147,10 +147,10 @@ Plug 'xolox/vim-misc'
 Plug 'rking/ag.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx'
-Plug 'isRuslan/vim-es6'
-Plug 'othree/html5.vim'
+Plug 'isRuslan/vim-es6', { 'for': 'javascript' }
+Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'elixir-lang/vim-elixir'
@@ -163,7 +163,7 @@ call plug#end()
 "=============================================================================
 " Plugin config
 "=============================================================================
-" refer to ~/.vim/plugged/vim-colorschemes/color/ for more themes
+" refer to ~/.config/nvim/plugged/vim-colorschemes/color/ for more themes
 " or :colorscheme <tab> to see list
 colorscheme pf_earth
 
