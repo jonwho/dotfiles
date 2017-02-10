@@ -169,6 +169,9 @@ colorscheme molokai
 
 " use deoplete
 let g:deoplete#enable_at_startup=1
+" deoplete tab completion similar to YCM
+" otherwise would have to use <C-n> or <C-p> to cycle through completion list
+inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 
 " shortcut to toggle NERDTree
 map <C-n> :NERDTreeToggle <CR>
