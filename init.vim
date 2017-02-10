@@ -122,13 +122,12 @@ map <C-l> <C-W>l
 "=============================================================================
 " auto install vim-plug and plugins listed in your init.vim if haven't already
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl ~/.config/nvim/autoload/plug.vim --create-dirs
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  au VimEnter * PlugInstall | source $MYVIMRC
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'Valloric/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
@@ -158,6 +157,7 @@ Plug 'jpalardy/vim-slime'
 Plug 'henrik/vim-indexed-search'
 Plug 'myusuf3/numbers.vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 "=============================================================================
@@ -165,7 +165,10 @@ call plug#end()
 "=============================================================================
 " refer to ~/.config/nvim/plugged/vim-colorschemes/color/ for more themes
 " or :colorscheme <tab> to see list
-colorscheme pf_earth
+colorscheme molokai
+
+" use deoplete
+let g:deoplete#enable_at_startup=1
 
 " shortcut to toggle NERDTree
 map <C-n> :NERDTreeToggle <CR>
@@ -225,12 +228,6 @@ let g:syntastic_ruby_checkers=['rubocop', 'mri']
 
 " configure Ag to always search from project root instead of cwd
 let g:ag_working_path_mode="r"
-
-" call typescript autocompletion with YCM
-if !exists("g:ycm_semantic_triggers")
-  let g:ycm_semantic_triggers={}
-endif
-let g:ycm_semantic_triggers['typescript']=['.']
 
 " highlight bad whitespace
 hi ExtraWhitespace ctermbg=blue

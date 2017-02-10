@@ -14,7 +14,6 @@ chmod +x install.sh
 * [vim-plug](https://github.com/junegunn/vim-plug)
 * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
-* [youcompleteme](https://github.com/Valloric/YouCompleteMe)
 * [easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
 * [indentLine](https://github.com/Yggdroot/indentLine)
@@ -42,12 +41,12 @@ chmod +x install.sh
 * [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [vim-indexed-search](https://github.com/henrik/vim-indexed-search)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim)
+* [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).
-Run the install script to autoinstall plugins on Vim load. `youcompleteme` and
-`ag` have post-install steps that need to be ran to build YCM and install
-required binaries; refer to respective repos for more.
+Run the install script to autoinstall plugins on Vim load. `ag` and `deoplete`
+have binaries or requirements that need to be met in order to install and use.
 
 This repo's vimrc uses fewer plugins than nvim's init.vim to keep vim as vanilla
 as possible. Plugins are available in init.vim for nvim but there are quite a
@@ -62,26 +61,10 @@ tic $TERM.ti
 See [this](https://github.com/neovim/neovim/issues/2048#issuecomment-78045837)
 for more info.
 
-## YouCompleteMe
-YouCompleteMe is a great code completion plugin but requires some extra work to
-install. Refer to [https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) for installation notes.
-
-As of Ubuntu 14.04 LTS can now install YouCompleteMe with the package manager.
-```
-sudo apt-get install vim
-sudo apt-get install vim-youcompleteme
-sudo apt-get install vim-addon-manager
-vam install youcompleteme
-```
-
-To install on Arch Linux run the following commands.
-```
-wget https://aur.archlinux.org/packages/vi/vim-youcompleteme-git/vim-youcompleteme-git.tar.gz
-tar xzvf vim-youcompleteme-git.tar.gz
-cd vim-youcompleteme
-makepkg -s
-sudo pacman -U vim-youcompleteme-git-*.tar.xz
-```
+## deoplete
+deoplete is for neovim only. Make sure you meet the requirements first before
+installing deoplete. Check [deoplete](https://github.com/Shougo/deoplete.nvim)
+for more.
 
 ## Quick ctags note
 Need to run ctags command in the project root to update .vimtags so vim knows
