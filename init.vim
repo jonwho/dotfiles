@@ -63,6 +63,11 @@ au BufRead,BufNewFile *.s setlocal noexpandtab
 au BufRead,BufNewFile *.s setlocal shiftwidth=8
 au BufRead,BufNewFile *.s setlocal tabstop=8
 
+" python pep8 prefers 4 spaces for indentation
+au BufRead,BufNewFile *.py setlocal expandtab
+au BufRead,BufNewFile *.py setlocal shiftwidth=4
+au BufRead,BufNewFile *.py setlocal tabstop=4
+
 " Makefile requires tab character unless you provide a separate recipe file
 au BufRead,BufNewFile [Mm]akefile setlocal noexpandtab
 au BufNewFile [Mm]akefile* setlocal formatoptions=croql comments=:#
