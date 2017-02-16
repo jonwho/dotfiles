@@ -254,6 +254,8 @@ let g:slime_target="tmux"
 
 " set easytags to update tags asynchronously else it will block vim
 let g:easytags_async=1
+" disable auto highlight because it kept blocking vim
+let g:easytags_auto_highlight=0
 
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")
