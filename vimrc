@@ -194,3 +194,10 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
+
+" vim-airline config
+" enable advanced tabline display
+let g:airline#extensions#tabline#enabled=1
+" enable tabline indices so index shows next to associated tab
+" e.g. 1gt or 12gt to jump to first or twelfth tab
+let g:airline#extensions#tabline#tab_nr_type=1

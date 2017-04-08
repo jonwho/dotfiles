@@ -257,6 +257,13 @@ let g:easytags_async=1
 " disable auto highlight because it kept blocking vim
 let g:easytags_auto_highlight=0
 
+" vim-airline config
+" enable advanced tabline display
+let g:airline#extensions#tabline#enabled=1
+" enable tabline indices so index shows next to associated tab
+" e.g. 1gt or 12gt to jump to first or twelfth tab
+let g:airline#extensions#tabline#tab_nr_type=1
+
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")
 let s:opam_share_dir = substitute(s:opam_share_dir, '[\r\n]*$', '', '')
