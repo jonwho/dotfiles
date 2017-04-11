@@ -74,8 +74,6 @@ au BufNewFile [Mm]akefile* setlocal formatoptions=croql comments=:#
 
 au BufNewFile {.vimrc,*.vim} setlocal formatoptions=croql comments=:\"
 
-au FileType c,cpp,java set mps+==:;
-
 au BufRead,BufNewFile *.* setlocal spell " turn on spellcheck
 set complete+=kspell                     " spell completion
 " marks word under cursor as correct in spellfile - `zg`
