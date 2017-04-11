@@ -162,6 +162,7 @@ Plug 'jpalardy/vim-slime'
 Plug 'henrik/vim-indexed-search'
 Plug 'myusuf3/numbers.vim'
 Plug 'flazz/vim-colorschemes'
+Plug 'artur-shaik/vim-javacomplete2'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
@@ -263,6 +264,9 @@ let g:airline#extensions#tabline#enabled=1
 " enable tabline indices so index shows next to associated tab
 " e.g. 1gt or 12gt to jump to first or twelfth tab
 let g:airline#extensions#tabline#tab_nr_type=1
+
+" config for javacomplete2
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")
