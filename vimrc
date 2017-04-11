@@ -139,6 +139,7 @@ Plug 'bling/vim-airline'
 Plug 'rking/ag.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Raimondi/delimitMate'
 Plug 'flazz/vim-colorschemes'
 call plug#end()
 
@@ -163,6 +164,9 @@ let g:nerdtree_tabs_open_on_new_tab=1
 " shortcut for CtrlP
 let g:ctrlp_map='<C-p>'
 let g:ctrl_cmd='CtrlP'
+
+" put cursor on a line between { and }
+let delimitMate_expand_cr=1
 
 " don't run CtrlP for .gitignore'd files
 let g:ctrlp_user_command=
