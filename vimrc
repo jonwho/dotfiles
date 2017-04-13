@@ -203,3 +203,10 @@ let g:airline#extensions#tabline#enabled=1
 " enable tabline indices so index shows next to associated tab
 " e.g. 1gt or 12gt to jump to first or twelfth tab
 let g:airline#extensions#tabline#tab_nr_type=1
+" turn off buffer listing on the top right
+" saves precious room on the tabline
+let g:airline#extensions#tabline#show_splits=0
+" dont show buffers in tabline
+" was annoying to see tabline filled with hidden buffers
+" :bd to kill current buffer but :q closes the tab, note the difference
+let g:airline#extensions#tabline#show_buffers=0
