@@ -39,6 +39,7 @@ set nolist	        " tabs are not shown as <TABS> and EOL as <EOL>
 set matchtime=2     " tenths of seconds to show matching pairs
 set splitbelow      " extra window open below the current window
 set bs=2	          " fix backspacing in insert mode
+set t_Co=256        " if terminal supports 256 colors
 
 "=============================================================================
 " Formating Options
