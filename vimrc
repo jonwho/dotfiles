@@ -136,7 +136,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'rking/ag.vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -199,6 +200,7 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
 " vim-airline config
+let g:airline_theme='simple'
 " enable advanced tabline display
 let g:airline#extensions#tabline#enabled=1
 " enable tabline indices so index shows next to associated tab

@@ -146,7 +146,8 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 Plug 'rking/ag.vim'
@@ -260,6 +261,7 @@ let g:easytags_async=1
 let g:easytags_auto_highlight=0
 
 " vim-airline config
+let g:airline_theme='simple'
 " enable advanced tabline display
 let g:airline#extensions#tabline#enabled=1
 " enable tabline indices so index shows next to associated tab
