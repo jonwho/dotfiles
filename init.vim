@@ -166,6 +166,7 @@ Plug 'myusuf3/numbers.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'elubow/cql-vim'
 call plug#end()
 
 "=============================================================================
