@@ -176,6 +176,11 @@ call plug#end()
 " or :colorscheme <tab> to see list
 colorscheme molokai
 
+" dont know which plugin it is but it was concealing double quotes from json
+" files which made it very difficult to see what was going on
+" this turns the concealer off
+set conceallevel=0
+
 " use deoplete
 let g:deoplete#enable_at_startup=1
 " deoplete tab completion similar to YCM

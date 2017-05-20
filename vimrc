@@ -151,6 +151,11 @@ call plug#end()
 " refer to ~/.vim/plugged/vim-colorschemes/color/ for more
 colorscheme molokai
 
+" dont know which plugin it is but it was concealing double quotes from json
+" files which made it very difficult to see what was going on
+" this turns the concealer off
+set conceallevel=0
+
 " shortcut to toggle NERDTree
 map <C-n> :NERDTreeToggle <CR>
 " show hidden files in NERDTree on startup <shift>+<i> to toggle
