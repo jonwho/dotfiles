@@ -12,7 +12,7 @@ cp ~/.bashrc ~/old.bashrc
 # copy .tmux.conf to old.tmux.conf
 cp ~/.tmux.conf ~/old.tmux.conf
 # copy .eslintrc.json to old.eslintrc.json
-cp ~/.eslintrc.json ~/eslintrc.json
+cp ~/.eslintrc.json ~/old.eslintrc.json
 echo "Done copying"
 echo ""
 
