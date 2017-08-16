@@ -42,6 +42,8 @@ chmod +x install.sh
 * [vim-indexed-search](https://github.com/henrik/vim-indexed-search)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim)
 * [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
+* [cql-vim](https://github.com/elubow/cql-vim)
+* [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).

@@ -167,6 +167,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'elubow/cql-vim'
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 "=============================================================================

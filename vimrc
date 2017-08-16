@@ -143,6 +143,7 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'flazz/vim-colorschemes'
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 "=============================================================================
