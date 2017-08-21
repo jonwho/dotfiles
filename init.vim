@@ -168,6 +168,8 @@ Plug 'artur-shaik/vim-javacomplete2'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'elubow/cql-vim'
 Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "=============================================================================
@@ -268,7 +270,7 @@ let g:easytags_async=1
 let g:easytags_auto_highlight=0
 
 " vim-airline config
-let g:airline_theme='simple'
+let g:airline_theme='deus'
 " enable advanced tabline display
 let g:airline#extensions#tabline#enabled=1
 " enable tabline indices so index shows next to associated tab

@@ -144,6 +144,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "=============================================================================
@@ -206,7 +208,7 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 
 " vim-airline config
-let g:airline_theme='simple'
+let g:airline_theme='deus'
 " enable advanced tabline display
 let g:airline#extensions#tabline#enabled=1
 " enable tabline indices so index shows next to associated tab
