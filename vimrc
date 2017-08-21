@@ -221,7 +221,12 @@ let g:airline#extensions#tabline#show_splits=0
 " was annoying to see tabline filled with hidden buffers
 " :bd to kill current buffer but :q closes the tab, note the difference
 let g:airline#extensions#tabline#show_buffers=0
+" unfortunately need to turn off branch support cuz current bug with vim/nvim?
+" and use of system() call
+let g:airline#extensions#branch#enabled=0
 
+
+" vim-easy-align config
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
