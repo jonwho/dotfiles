@@ -202,7 +202,7 @@ let NERDTreeShowHidden=1
 au vimenter * if !argc() | NERDTree | endif
 
 " shortcut for CtrlP
-let g:ctrlp_map='<c-p>'
+let g:ctrlp_map='<C-p>'
 let g:ctrlp_cmd='CtrlP'
 
 " don't run CtrlP for .gitignore'd files
@@ -295,6 +295,9 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" fzf config
+nnoremap <C-f> :FZF<cr>
 
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")
