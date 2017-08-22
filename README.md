@@ -26,7 +26,6 @@ chmod +x install.sh
 * [vim-easytags](https://github.com/xolox/vim-easytags)
 * [vim-misc](https://github.com/xolox/vim-misc)
 * [vim-rails](https://github.com/tpope/vim-rails)
-* [ag](https://github.com/rking/ag.vim)
 * [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
@@ -77,7 +76,7 @@ ctags -R .
 ```
 
 ## Ag aka the silver searcher
-Must install separately onto your system first otherwise ag.vim plugin won't
+Must install separately onto your system first otherwise fzf.vim plugin won't
 find the executable. Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
 
 ## tmux
