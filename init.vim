@@ -17,7 +17,7 @@ set confirm         " starts dialog when exiting without saving
 set ignorecase			" search without regards to case
 set smartcase       " switch case sensitivity context based on your input
 set noincsearch			" don't go immediately to pattern typed
-set nohlsearch			" don't highlight search terms
+set hlsearch			  " highlight search terms
 set backspace=indent,eol,start  " backspace over everything
 set fileformats=unix,dos,mac    " open files from mac/dos
 set autoread                    " refresh buffer content if there are changes
@@ -28,7 +28,6 @@ set exrc            " open local config files
 set nojoinspaces    " don't add white space when I don't tell you to
 set showmatch       " ensure Dyck language
 set incsearch       " incremental searching
-set nohlsearch      " meh
 
 set mouse=a         " enable the mouse (enables clicking and scrolling)
 set mousehide	      " hides the mouse pointer when typing characters
