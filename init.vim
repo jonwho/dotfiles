@@ -173,7 +173,7 @@ call plug#end()
 "=============================================================================
 " Plugin config
 "=============================================================================
-" refer to ~/.config/nvim/plugged/vim-colorschemes/color/ for more themes
+" refer to ~/.local/share/nvim/plugged/vim-colorschemes/colors/
 " or :colorscheme <tab> to see list
 colorscheme molokai
 
