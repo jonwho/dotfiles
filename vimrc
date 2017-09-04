@@ -102,7 +102,7 @@ set foldlevel=2
 set wildchar=<Tab>     " character that starts the autocompletion
 set wildmenu           " shows a list of possible autocompletions
 set wildmode=list      " show list and complete the first match
-set nowritebackup      " no intermidate files when saving
+set nowritebackup      " no intermediate files when saving
 set wildignore=*.so,*.swp,*.swo,*.zip,*.o,*.bak,*.data,*.class
 
 " map jj to <Esc> to more conveniently escape insert mode
@@ -132,17 +132,16 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'w0rp/ale'
 call plug#end()
 
 "=============================================================================
@@ -168,41 +167,11 @@ au vimenter * if !argc() | NERDTree | endif
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_open_on_new_tab=1
 
-" shortcut for CtrlP
-let g:ctrlp_map='<C-p>'
-let g:ctrl_cmd='CtrlP'
 
 " put cursor on a line between { and }
 let delimitMate_expand_cr=1
 
-" don't run CtrlP for .gitignore'd files
-let g:ctrlp_user_command=
-  \ ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
-" NERDTree and CtrlP working together!
-" using the two options below NERDTree will dynamically change root with CWD
-" CtrlP will read root from outside of CWD
-" this means that CtrlP search will now be project focused and instead of
-" reading up until it finds root marker which is commonly .git/ for my work
-" but also includes .hg, .svn, .bzr and _darcs as markers
 let g:NERDTreeChDirMode=2 " CWD changes whenever the root is changed
-let g:ctrlp_working_path_mode='rw' " Find root from CWD outside of CtrlP
-" the following root markers are a custom setting for work because I am
-" working in a unirepo where there exists only one .git/ for 30+ projects
-let g:ctrlp_root_markers=['.gitignore', 'README.md', 'Makefile']
-
-" configure Ag to always search from project root instead of cwd
-let g:ag_working_path_mode="r"
-
-" Syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
 
 " vim-airline config
 let g:airline_theme='deus'

@@ -102,7 +102,7 @@ set foldlevel=2
 set wildchar=<Tab>     " character that starts the autocompletion
 set wildmenu           " shows a list of possible autocompletions
 set wildmode=list      " show list and complete the first match
-set nowritebackup      " no intermidate files when saving
+set nowritebackup      " no intermediate files when saving
 set wildignore=*.so,*.swp,*.swo,*.zip,*.o,*.bak,*.data,*.class
 
 " map jj to <Esc> to more conveniently escape insert mode
@@ -155,7 +155,6 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx'
 Plug 'isRuslan/vim-es6', { 'for': 'javascript' }
 Plug 'othree/html5.vim', { 'for': 'html' }
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'kchmck/vim-coffee-script'
 Plug 'elixir-lang/vim-elixir'
 Plug 'jpalardy/vim-slime'
@@ -168,6 +167,7 @@ Plug 'elubow/cql-vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'w0rp/ale'
 call plug#end()
 
 "=============================================================================
@@ -182,42 +182,22 @@ colorscheme molokai
 " this turns the concealer off
 set conceallevel=0
 
-" use deoplete
+" deoplete config
 let g:deoplete#enable_at_startup=1
 " deoplete tab completion similar to YCM
 " otherwise would have to use <C-n> or <C-p> to cycle through completion list
 inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 
+" NERDTree config
 " shortcut to toggle NERDTree
 map <C-n> :NERDTreeToggle <CR>
 " show hidden files in NERDTree on startup <shift>+<i> to toggle
 let NERDTreeShowHidden=1
 
-" autostart NERDTree when vim starts up
-" au vimenter * NERDTree
-
 " autostart NERDTree when vim starts up if no files specified
 au vimenter * if !argc() | NERDTree | endif
 
-" shortcut for CtrlP
-let g:ctrlp_map='<C-p>'
-let g:ctrlp_cmd='CtrlP'
-
-" don't run CtrlP for .gitignore'd files
-let g:ctrlp_user_command=
-  \ ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
-" NERDTree and CtrlP working together!
-" using the two options below NERDTree will dynamically change root with CWD
-" CtrlP will read root from outside of CWD
-" this means that CtrlP search will now be project focused and instead of
-" reading up until it finds root marker which is commonly .git/ for my work
-" but also includes .hg, .svn, .bzr and _darcs as markers
 let g:NERDTreeChDirMode=2 " CWD changes whenever the root is changed
-let g:ctrlp_working_path_mode='rw' " Find root from CWD outside of CtrlP
-" the following root markers are a custom setting for work because I am
-" working in a unirepo where there exists only one .git/ for 30+ projects
-let g:ctrlp_root_markers=['.gitignore', 'README.md', 'Makefile']
 
 " put cursor on a line between { and }
 let delimitMate_expand_cr=1
@@ -254,14 +234,16 @@ hi ExtraWhitespace ctermbg=blue
 let g:javascript_enable_domhtmlcss=1
 
 " vim-jsx config
-let g:jsx_ext_required=1 " Enables jsx syntax highlighting only for .jsx files
+let g:jsx_ext_required=0 " Enables jsx syntax highlighting for .js files too
 
 " vim-es6 & vim-javascript? this sets js highlighting for .es6
 au BufReadPost *.es6 set syntax=javascript
 
+" vim-slime config
 " default tmux as the slime target (SLIME is a REPL)
 let g:slime_target="tmux"
 
+" vim-easytags config
 " set easytags to update tags asynchronously else it will block vim
 let g:easytags_async=1
 " disable auto highlight because it kept blocking vim
@@ -285,7 +267,7 @@ let g:airline#extensions#tabline#show_buffers=0
 " and use of system() call
 let g:airline#extensions#branch#enabled=0
 
-" config for javacomplete2
+" javacomplete2 config
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " vim-easy-align config

@@ -12,7 +12,6 @@ chmod +x install.sh
 
 ## vim
 * [vim-plug](https://github.com/junegunn/vim-plug)
-* [ctrlp](https://github.com/ctrlpvim/ctrlp.vim)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
@@ -22,7 +21,6 @@ chmod +x install.sh
 * [nerdtreetabs](https://github.com/jistr/vim-nerdtree-tabs)
 * [vim-airline](https://github.com/bling/vim-airline)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
-* [syntastic](https://github.com/scrooloose/syntastic)
 * [vim-easytags](https://github.com/xolox/vim-easytags)
 * [vim-misc](https://github.com/xolox/vim-misc)
 * [vim-rails](https://github.com/tpope/vim-rails)
@@ -44,6 +42,7 @@ chmod +x install.sh
 * [cql-vim](https://github.com/elubow/cql-vim)
 * [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
+* [ale](https://github.com/w0rp/ale)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).
@@ -75,7 +74,7 @@ where them tags at.
 ctags -R .
 ```
 
-## Ag aka the silver searcher
+## the_silver_searcher
 Must install separately onto your system first otherwise fzf.vim plugin won't
 find the executable. Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
 
