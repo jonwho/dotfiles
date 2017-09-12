@@ -133,7 +133,6 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'Yggdroot/indentline'
 Plug 'Raimondi/delimitMate'
@@ -206,27 +205,6 @@ let delimitMate_expand_cr=1
 " enable NerdTreeTabs on vim startup
 let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_open_on_new_tab=1
-
-" Syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
-
-" run `npm install -g eslint` to get globally
-let g:syntastic_javascript_checkers=['eslint']
-
-" gets rid of a few AngularJS specific lints
-let g:syntastic_html_tidy_ignore_errors=["proprietary attribute \"ng-"]
-" run `gem install rubocop`
-let g:syntastic_ruby_checkers=['rubocop', 'mri']
-
-" configure Ag to always search from project root instead of cwd
-let g:ag_working_path_mode="r"
 
 " highlight bad whitespace
 hi ExtraWhitespace ctermbg=blue
