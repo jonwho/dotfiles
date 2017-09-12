@@ -168,6 +168,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 call plug#end()
 
 "=============================================================================
