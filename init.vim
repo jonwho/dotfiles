@@ -197,6 +197,11 @@ let NERDTreeShowHidden=1
 " autostart NERDTree when vim starts up if no files specified
 au vimenter * if !argc() | NERDTree | endif
 
+" nerdcommenter config
+let g:NERDSpaceDelims=1       " add number of spaces after comment delimiter
+let g:NERDDefaultAlign='left' " align line-wise delimiters flush left
+let g:NERDCommentEmptyLines=1 " comment/invert empty lines (useful for large block comment/region)
+
 let g:NERDTreeChDirMode=2 " CWD changes whenever the root is changed
 
 " put cursor on a line between { and }
