@@ -168,6 +168,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'thoughtbot/vim-rspec'
 call plug#end()
 
 "=============================================================================
@@ -262,6 +263,12 @@ nmap ga <Plug>(EasyAlign)
 
 " fzf config
 nnoremap <C-f> :FZF<cr>
+
+" vim-rspec config
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
 
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")
