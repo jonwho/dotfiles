@@ -8,55 +8,55 @@ filetype off
 "=============================================================================
 " General Settings
 "=============================================================================
-set noerrorbells    " no error beeps
-set novisualbell    " no error flashes
 
-set title           " filename [+=-] (path) - GVIM
-set confirm         " starts dialog when exiting without saving
-
-set ignorecase			" search without regards to case
-set smartcase       " switch case sensitivity context based on your input
-set noincsearch			" don't go immediately to pattern typed
-set hlsearch			  " highlight search terms
-set backspace=indent,eol,start  " backspace over everything
-set fileformats=unix,dos,mac    " open files from mac/dos
-set autoread                    " refresh buffer content if there are changes
-
-set ruler	          " show line number
-set showmode        " display the current mode on the last line
-set exrc            " open local config files
-set nojoinspaces    " don't add white space when I don't tell you to
-set showmatch       " ensure Dyck language
-set incsearch       " incremental searching
-
-set mouse=a         " enable the mouse (enables clicking and scrolling)
-set mousehide	      " hides the mouse pointer when typing characters
-set undolevels=100  " the commands that can be stored in for undo
-set history=20	    " stores the last 20 ':' commands
-set nolist	        " tabs are not shown as <TABS> and EOL as <EOL>
-set matchtime=2     " tenths of seconds to show matching pairs
-set splitbelow      " extra window open below the current window
-set bs=2	          " fix backspacing in insert mode
-set t_Co=256        " if terminal supports 256 colors
+set noerrorbells               " no error beeps
+set novisualbell               " no error flashes
+set title                      " filename [+=-] (path) - GVIM
+set confirm                    " starts dialog when exiting without saving
+set ignorecase                 " search without regards to case
+set smartcase                  " switch case sensitivity context based on your input
+set noincsearch                " don't go immediately to pattern typed
+set hlsearch                   " highlight search terms
+set backspace=indent,eol,start " backspace over everything
+set fileformats=unix,dos,mac   " open files from mac/dos
+set autoread                   " refresh buffer content if there are changes
+set ruler                      " show line number
+set showmode                   " display the current mode on the last line
+set exrc                       " open local config files
+set nojoinspaces               " don't add white space when I don't tell you to
+set showmatch                  " ensure Dyck language
+set incsearch                  " incremental searching
+set mouse=a                    " enable the mouse (enables clicking and scrolling)
+set mousehide                  " hides the mouse pointer when typing characters
+set undolevels=100             " the commands that can be stored in for undo
+set history=20                 " stores the last 20 ':' commands
+set nolist                     " tabs are not shown as <TABS> and EOL as <EOL>
+set matchtime=2                " tenths of seconds to show matching pairs
+set splitbelow                 " extra window open below the current window
+set splitright                 " open new splits to right/below
+set bs=2                       " fix backspacing in insert mode
+set t_Co=256                   " if terminal supports 256 colors
 
 "=============================================================================
 " Formating Options
 "=============================================================================
-set colorcolumn=80      " colors single column at line 80 for visual cue
-set autoindent	        " autoindent on
+
 " smartindent is an old script! it was meant to be smart complement to
 " autoindent but it keeps fooking up python and ruby comments
 "set smartindent         " next line of indention based on previous line
-set formatoptions=tcrq	" how to auto indent, see fo-table for description
+
+set colorcolumn=80     " colors single column at line 80 for visual cue
+set autoindent         " autoindent on
+set formatoptions=tcrq " how to auto indent, see fo-table for description
 
 " Screw it. 2 SPACES ALL!
 set expandtab
 set shiftwidth=2
 set tabstop=2
 
-set wrapmargin=2       " word wraps 2 character spaces from the margin
-set shiftround         " rounds < & > command to the nearest mod of shiftwidth
-set scrolloff=12       " number of lines to keep around cursor
+set wrapmargin=2 " word wraps 2 character spaces from the margin
+set shiftround   " rounds < & > command to the nearest mod of shiftwidth
+set scrolloff=12 " number of lines to keep around cursor
 
 " do not expand tabs in assembly file -- make them 8 chars wide
 au BufRead,BufNewFile *.s setlocal noexpandtab
@@ -82,7 +82,8 @@ set complete+=kspell                     " spell completion
 "=============================================================================
 " Programming Options
 "=============================================================================
-set showmatch    " show match when inserting {}, [], or ()'s
+
+set showmatch " show match when inserting {}, [], or ()'s
 syntax on
 set cin
 " need indent keyword so that python/ruby comments format properly
@@ -98,6 +99,7 @@ set foldlevel=2
 "=============================================================================
 " Misc
 "=============================================================================
+
 " ignores files when autocompleting
 set wildchar=<Tab>     " character that starts the autocompletion
 set wildmenu           " shows a list of possible autocompletions
@@ -123,6 +125,7 @@ map <C-l> <C-W>l
 "=============================================================================
 " Plugins
 "=============================================================================
+
 " auto install vim-plug and plugins listed in your init.vim if haven't already
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -174,6 +177,7 @@ call plug#end()
 "=============================================================================
 " Plugin config
 "=============================================================================
+
 " refer to ~/.local/share/nvim/plugged/vim-colorschemes/colors/
 " or :colorscheme <tab> to see list
 colorscheme molokai
