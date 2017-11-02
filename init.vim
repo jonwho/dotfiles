@@ -178,6 +178,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'thoughtbot/vim-rspec'
+Plug 'ap/vim-css-color'
 call plug#end()
 
 "=============================================================================

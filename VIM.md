@@ -34,6 +34,7 @@
 * [ale](https://github.com/w0rp/ale)
 * [vim-go](https://github.com/fatih/vim-go)
 * [vim-rspec](https://github.com/thoughtbot/vim-rspec)
+* [vim-css-color](https://github.com/ap/vim-css-color)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).
