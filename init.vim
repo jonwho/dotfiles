@@ -274,6 +274,9 @@ nmap ga <Plug>(EasyAlign)
 
 " fzf config
 nnoremap <C-f> :FZF<cr>
+" you can actually set ENV vars in a vimrc file
+" this change changes the search command FZF uses to silver_searcher
+let $FZF_DEFAULT_COMMAND='ag -g ""'
 
 " vim-rspec config
 map <Leader>t :call RunCurrentSpecFile()<CR>
