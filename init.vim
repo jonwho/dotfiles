@@ -224,7 +224,8 @@ let g:nerdtree_tabs_open_on_console_startup=1
 let g:nerdtree_tabs_open_on_new_tab=1
 
 " highlight bad whitespace
-hi ExtraWhitespace ctermbg=blue
+hi ExtraWhitespace ctermbg=white
+autocmd BufEnter * EnableStripWhitespaceOnSave
 
 " vim-javascript config
 let g:javascript_enable_domhtmlcss=1
