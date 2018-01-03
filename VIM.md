@@ -35,6 +35,7 @@
 * [vim-go](https://github.com/fatih/vim-go)
 * [vim-rspec](https://github.com/thoughtbot/vim-rspec)
 * [vim-css-color](https://github.com/ap/vim-css-color)
+* [vim-signature](https://github.com/kshenoy/vim-signature)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).
@@ -65,8 +66,10 @@ where them tags at.
 ```
 ctags -R .
 ```
+[vim-easytags](https://github.com/xolox/vim-easytags) will auto-regenerate tags as you edit files
+in your project so you don't have to manually update.
 
 ## the_silver_searcher
 Must install separately onto your system first otherwise fzf.vim plugin won't
 find the executable. Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
-
+This lets you run the ex command `:Ag` to search patterns within files.
