@@ -1,7 +1,7 @@
 " ~/.config/nvim/init.vim
 
-set nocompatible    " this line must be first or the changes you are expecting
-                    " may not be the changes that occur
+set nocompatible " this line must be first or the changes you are expecting
+                 " may not be the changes that occur
 
 filetype off
 
@@ -45,7 +45,7 @@ set t_Co=256                   " if terminal supports 256 colors
 " autoindent but it keeps fooking up python and ruby comments
 "set smartindent         " next line of indention based on previous line
 
-set colorcolumn=80     " colors single column at line 80 for visual cue
+set colorcolumn=100    " colors single column at line 80 for visual cue
 set autoindent         " autoindent on
 set formatoptions=tcrq " how to auto indent, see fo-table for description
 
@@ -113,7 +113,7 @@ imap jj <Esc>
 " highlight current line
 set cursorline
 hi CursorLine cterm=NONE ctermbg=red ctermfg=white guibg=#ed00f5 guifg=white
-" toggle the cursor highlight with \c
+" toggle the cursor highlight with <Leader>c
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 " use <ctrl> + h/j/k/l to move between Vim panes
@@ -152,6 +152,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-vinegar'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -180,6 +181,8 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'ap/vim-css-color'
 Plug 'kshenoy/vim-signature'
+Plug 'plasticboy/vim-markdown'
+Plug 'liuchengxu/space-vim-dark'
 call plug#end()
 
 "=============================================================================
@@ -188,7 +191,7 @@ call plug#end()
 
 " refer to ~/.local/share/nvim/plugged/vim-colorschemes/colors/
 " or :colorscheme <tab> to see list
-colorscheme molokai
+colorscheme space-vim-dark
 
 " dont know which plugin it is but it was concealing double quotes from json
 " files which made it very difficult to see what was going on
@@ -207,6 +210,10 @@ map <C-n> :NERDTreeToggle <CR>
 " show hidden files in NERDTree on startup <shift>+<i> to toggle
 let NERDTreeShowHidden=1
 
+" enable NerdTreeTabs on vim startup
+let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_new_tab=1
+
 " autostart NERDTree when vim starts up if no files specified
 au vimenter * if !argc() | NERDTree | endif
 
@@ -217,13 +224,11 @@ let g:NERDCommentEmptyLines=1 " comment/invert empty lines (useful for large blo
 
 let g:NERDTreeChDirMode=2 " CWD changes whenever the root is changed
 
+" delimitMate config
 " put cursor on a line between { and }
 let delimitMate_expand_cr=1
 
-" enable NerdTreeTabs on vim startup
-let g:nerdtree_tabs_open_on_console_startup=1
-let g:nerdtree_tabs_open_on_new_tab=1
-
+" better-whitespace config
 " highlight bad whitespace
 hi ExtraWhitespace ctermbg=white
 autocmd BufEnter * EnableStripWhitespaceOnSave
@@ -288,6 +293,10 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 " uncomment this if using zeus
 " let g:rspec_command="!zeus rspec --drb {spec}"
+
+" vim-markdown config
+" want to be able to see [url_name](url_link)
+let g:vim_markdown_conceal=0
 
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")
