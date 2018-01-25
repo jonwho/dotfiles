@@ -36,6 +36,7 @@ set splitbelow                 " extra window open below the current window
 set splitright                 " open new splits to right/below
 set bs=2                       " fix backspacing in insert mode
 set t_Co=256                   " if terminal supports 256 colors
+let g:netrw_liststyle=3        " defaults netrw listing style to tree
 
 "=============================================================================
 " Formating Options
