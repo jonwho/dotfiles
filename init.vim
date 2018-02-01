@@ -102,10 +102,10 @@ set foldlevel=2
 "=============================================================================
 
 " ignores files when autocompleting
-set wildchar=<Tab>     " character that starts the autocompletion
-set wildmenu           " shows a list of possible autocompletions
-set wildmode=list      " show list and complete the first match
-set nowritebackup      " no intermediate files when saving
+set wildchar=<Tab> " character that starts the autocompletion
+set wildmenu       " shows a list of possible autocompletions
+set wildmode=list  " show list and complete the first match
+set nowritebackup  " no intermediate files when saving
 set wildignore=*.so,*.swp,*.swo,*.zip,*.o,*.bak,*.data,*.class
 
 " map jj to <Esc> to more conveniently escape insert mode
@@ -116,12 +116,6 @@ set cursorline
 hi CursorLine cterm=NONE ctermbg=red ctermfg=white guibg=#ed00f5 guifg=white
 " toggle the cursor highlight with <Leader>c
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
-
-" use <ctrl> + h/j/k/l to move between Vim panes
-map <C-h> <C-W>h
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-l> <C-W>l
 
 " move lines up and down without going into insert mode or using visual mode
 nnoremap <S-Up> :m-2<CR>
@@ -206,14 +200,8 @@ let g:deoplete#enable_at_startup=1
 inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 
 " NERDTree config
-" shortcut to toggle NERDTree
 map <C-n> :NERDTreeToggle <CR>
-" show hidden files in NERDTree on startup <shift>+<i> to toggle
-let NERDTreeShowHidden=1
-
-" enable NerdTreeTabs on vim startup
-let g:nerdtree_tabs_open_on_console_startup=1
-let g:nerdtree_tabs_open_on_new_tab=1
+let NERDTreeShowHidden=1 " show hidden files in NERDTree on startup <shift>+<i> to toggle
 
 " autostart NERDTree when vim starts up if no files specified
 au vimenter * if !argc() | NERDTree | endif
