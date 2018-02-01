@@ -94,6 +94,10 @@ alias l='ls -CF'
 alias git='hub'
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias ls='ls -G' # OSX has no command dircolor
+
+  # changes the color for directories to be baby blue color
+  export CLICOLOR=1
+  export LSCOLORS=GxFxCxDxBxegedabagaced
 fi
 
 # Add an "alert" alias for long running commands.  Use like so:
