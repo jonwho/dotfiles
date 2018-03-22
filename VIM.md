@@ -36,7 +36,6 @@
 * [vim-rspec](https://github.com/thoughtbot/vim-rspec)
 * [vim-css-color](https://github.com/ap/vim-css-color)
 * [vim-signature](https://github.com/kshenoy/vim-signature)
-* [vim-markdown](https://github.com/plasticboy/vim-markdown)
 * [space-vim](https://github.com/liuchengxu/space-vim)
 * [vim-vinegar](https://github.com/tpope/vim-vinegar)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
@@ -61,7 +60,9 @@ for more info.
 ## deoplete
 deoplete is for neovim only. Make sure you meet the requirements first before
 installing deoplete. Check [deoplete](https://github.com/Shougo/deoplete.nvim)
-for more.
+for more. If using Neovim make sure requirements for Python are met use so
+[pyenv](https://github.com/tweekmonster/nvim-python-doctor/wiki/Advanced:-Using-pyenv)
+to get consistency when starting up Neovim with deoplete.
 
 ## Quick ctags note
 Need to run ctags command in the project root to update .vimtags so vim knows

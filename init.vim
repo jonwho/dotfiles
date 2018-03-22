@@ -176,7 +176,6 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'ap/vim-css-color'
 Plug 'kshenoy/vim-signature'
-Plug 'plasticboy/vim-markdown'
 Plug 'liuchengxu/space-vim-dark'
 call plug#end()
 
