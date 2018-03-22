@@ -80,3 +80,15 @@ This lets you run the ex command `:Ag` to search patterns within files.
 ## Workflow
 * Use multiple buffers and windows to work on related problem.
 * Create another tab if working on something separate. (one buffer per tab is inefficient workflow)
+
+## Using vim-slime
+* Open up two panes in a window (if you want REPL side-by-side)
+* Open the REPL in the pane you wish to send text to.
+* In that pane run `echo $TMUX_PANE` or `tmux run "echo #{pane_id}"`
+to get the pane id.
+* In the pane with your vim editor run `:SlimeConfig` to name your selected
+pane. Then in the following prompt put in the pane id you found from earlier.
+* Now highlight the text you want to REPL then press `<C-c><C-c>` to send it
+over. Friggin' cool!
+
+Works really well for CoffeeScript, Ruby, OCaml, Python, Elixir. :toocool:
