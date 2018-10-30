@@ -162,7 +162,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-easytags'
-Plug 'xolox/vim-misc'
+Plug 'xolox/vim-misc' " dependency for xolox's plugins
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
@@ -186,8 +186,6 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'ap/vim-css-color'
 Plug 'kshenoy/vim-signature'
 Plug 'liuchengxu/space-vim-dark'
-Plug 'junegunn/goyo.vim'
-Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
 call plug#end()
 
 "=============================================================================
@@ -289,13 +287,6 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
-
-" uncomment this if using zeus
-" let g:rspec_command="!zeus rspec --drb {spec}"
-
-" vim-markdown config
-" want to be able to see [url_name](url_link)
-let g:vim_markdown_conceal=0
 
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")

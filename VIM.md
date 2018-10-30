@@ -1,8 +1,7 @@
-# Vim
+# NEOVIM/VIM
 
 * [vim-plug](https://github.com/junegunn/vim-plug)
 * [nerdtree](https://github.com/scrooloose/nerdtree)
-* [easymotion](https://github.com/Lokaltog/vim-easymotion)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
 * [indentLine](https://github.com/Yggdroot/indentLine)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
@@ -13,7 +12,6 @@
 * [vim-easytags](https://github.com/xolox/vim-easytags)
 * [vim-misc](https://github.com/xolox/vim-misc)
 * [vim-rails](https://github.com/tpope/vim-rails)
-* [typescript-vim](https://github.com/leafgarland/typescript-vim)
 * [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 * [vim-javascript](https://github.com/pangloss/vim-javascript)
 * [vim-jsx](https://github.com/mxw/vim-jsx)
@@ -21,7 +19,6 @@
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-es6](https://github.com/isRuslan/vim-es6)
 * [html5](https://github.com/othree/html5.vim)
-* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 * [vim-elixir](https://github.com/elixir/vim-elixir)
 * [vim-slime](https://github.com/jpalardy/vim-slime)
 * [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
@@ -48,16 +45,11 @@ This repo's vimrc uses fewer plugins than nvim's init.vim to keep vim as vanilla
 as possible. Plugins are available in init.vim for nvim but there are quite a
 few so if working in large unirepo you might notice a significant slowdown.
 
-To fix movement between vim panes on nvim when using <C-h> and iterm2 terminal
-you might need to change the keybind with the following:
-```shell
-infocmp $TERM | sed 's/kbs=^[hH]/kbs=\\177/' > $TERM.ti
-tic $TERM.ti
-```
-See [this](https://github.com/neovim/neovim/issues/2048#issuecomment-78045837)
-for more info.
-
 ## deoplete
+Currently no longer using a plugin for autocomplete. Deoplete & YouCompleteMe were running
+too slow for me. Opt to use `<C-x><C-n>` or the other various options with vanilla VIM.
+Otherwise use notes below for Deoplete.
+
 deoplete is for neovim only. Make sure you meet the requirements first before
 installing deoplete. Check [deoplete](https://github.com/Shougo/deoplete.nvim)
 for more. If using Neovim make sure requirements for Python are met use so
