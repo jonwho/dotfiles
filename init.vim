@@ -6,6 +6,15 @@ set nocompatible " this line must be first or the changes you are expecting
 filetype off
 
 "=============================================================================
+" SPECIFIC TO NEOVIM PYTHON STUFF
+"=============================================================================
+
+" let g:python_host_prog='/Users/jonathanho/.pyenv/versions/neovim2/bin/python'
+" Python3 also needed for 'aurieh/discord.nvim'
+let g:python3_host_prog='/Users/jonathanho/.pyenv/versions/neovim3/bin/python'
+
+
+"=============================================================================
 " General Settings
 "=============================================================================
 
@@ -154,26 +163,25 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
-Plug 'leafgarland/typescript-vim'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'isRuslan/vim-es6', { 'for': 'javascript' }
 Plug 'othree/html5.vim', { 'for': 'html' }
-Plug 'kchmck/vim-coffee-script'
-Plug 'elixir-lang/vim-elixir'
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'jpalardy/vim-slime'
 Plug 'henrik/vim-indexed-search'
 Plug 'myusuf3/numbers.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'artur-shaik/vim-javacomplete2'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'elubow/cql-vim'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'elubow/cql-vim', { 'for': 'cql' }
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'ap/vim-css-color'
 Plug 'kshenoy/vim-signature'
@@ -195,11 +203,11 @@ colorscheme space-vim-dark
 " this turns the concealer off
 set conceallevel=0
 
-" deoplete config
-let g:deoplete#enable_at_startup=1
-" deoplete tab completion similar to YCM
-" otherwise would have to use <C-n> or <C-p> to cycle through completion list
-inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
+" " deoplete config
+" let g:deoplete#enable_at_startup=1
+" " deoplete tab completion similar to YCM
+" " otherwise would have to use <C-n> or <C-p> to cycle through completion list
+" inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 
 " NERDTree config
 map <C-n> :NERDTreeToggle <CR>
