@@ -35,7 +35,16 @@ set matchtime=2                " tenths of seconds to show matching pairs
 set splitbelow                 " extra window open below the current window
 set bs=2                       " fix backspacing in insert mode
 set t_Co=256                   " if terminal supports 256 colors
-let g:netrw_liststyle=3        " defaults netrw listing style to tree
+
+"=============================================================================
+" NETRW Settings
+"=============================================================================
+
+let g:netrw_liststyle=3 " defaults netrw listing style to tree
+let g:netrw_banner=0    " do not display top banner
+let g:netrw_altv=1      " open splits to the right
+
+autocmd FileType netrw setl bufhidden=delete " auto delete hidden netrw buffers
 
 "=============================================================================
 " Formating Options
@@ -200,7 +209,12 @@ let g:airline#extensions#tabline#show_splits=0
 let g:airline#extensions#tabline#show_buffers=0
 " unfortunately need to turn off branch support cuz current bug with vim/nvim?
 " and use of system() call
-let g:airline#extensions#branch#enabled=0
+let g:airline#extensions#branch#enabled=1
+
+" nerdcommenter config
+let g:NERDSpaceDelims=1       " add number of spaces after comment delimiter
+let g:NERDDefaultAlign='left' " align line-wise delimiters flush left
+let g:NERDCommentEmptyLines=1 " comment/invert empty lines (useful for large block comment/region)
 
 " vim-easy-align config
 " Start interactive EasyAlign in visual mode (e.g. vipga)
