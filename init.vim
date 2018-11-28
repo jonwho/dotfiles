@@ -193,7 +193,7 @@ call plug#end()
 
 " refer to ~/.local/share/nvim/plugged/vim-colorschemes/colors/
 " or :colorscheme <tab> to see list
-colorscheme space-vim-dark
+colorscheme dracula
 
 " dont know which plugin it is but it was concealing double quotes from json
 " files which made it very difficult to see what was going on
