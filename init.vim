@@ -9,9 +9,9 @@ filetype off
 " SPECIFIC TO NEOVIM PYTHON STUFF
 "=============================================================================
 
+" TODO: this needs to be setup by user. pathing is custom to each machine
 " let g:python_host_prog='/Users/jonathanho/.pyenv/versions/neovim2/bin/python'
-" Python3 also needed for 'aurieh/discord.nvim'
-let g:python3_host_prog='/Users/jonathanho/.pyenv/versions/neovim3/bin/python'
+" let g:python3_host_prog='/Users/jonathanho/.pyenv/versions/neovim3/bin/python'
 
 
 "=============================================================================
@@ -158,7 +158,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-unimpaired'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'xolox/vim-easytags'
@@ -174,8 +173,7 @@ Plug 'henrik/vim-indexed-search'
 Plug 'myusuf3/numbers.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'artur-shaik/vim-javacomplete2'
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'elubow/cql-vim', { 'for': 'cql' }
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -186,6 +184,7 @@ Plug 'thoughtbot/vim-rspec'
 Plug 'ap/vim-css-color'
 Plug 'kshenoy/vim-signature'
 Plug 'liuchengxu/space-vim-dark'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 "=============================================================================
@@ -201,25 +200,22 @@ colorscheme space-vim-dark
 " this turns the concealer off
 set conceallevel=0
 
-" " deoplete config
-" let g:deoplete#enable_at_startup=1
-" " deoplete tab completion similar to YCM
-" " otherwise would have to use <C-n> or <C-p> to cycle through completion list
-" inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
+" deoplete config
+let g:deoplete#enable_at_startup=1
+" deoplete tab completion similar to YCM
+" otherwise would have to use <C-n> or <C-p> to cycle through completion list
+inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 
 " NERDTree config
-map <C-n> :NERDTreeToggle <CR>
-let NERDTreeShowHidden=1 " show hidden files in NERDTree on startup <shift>+<i> to toggle
-
-" autostart NERDTree when vim starts up if no files specified
-au vimenter * if !argc() | NERDTree | endif
+map <silent> <C-n> :NERDTreeToggle <CR> :NERDTreeMirror<CR>
+let NERDTreeShowHidden=1                      " show hidden files in NERDTree on startup <shift>+<i> to toggle
+let g:NERDTreeChDirMode=2                     " CWD changes whenever the root is changed
+au vimenter * if !argc() | NERDTree | endif   " autostart NERDTree when vim starts up if no files specified
 
 " nerdcommenter config
 let g:NERDSpaceDelims=1       " add number of spaces after comment delimiter
 let g:NERDDefaultAlign='left' " align line-wise delimiters flush left
 let g:NERDCommentEmptyLines=1 " comment/invert empty lines (useful for large block comment/region)
-
-let g:NERDTreeChDirMode=2 " CWD changes whenever the root is changed
 
 " delimitMate config
 " put cursor on a line between { and }
@@ -263,9 +259,6 @@ let g:airline#extensions#tabline#show_splits=0
 " was annoying to see tabline filled with hidden buffers
 " :bd to kill current buffer but :q closes the tab, note the difference
 let g:airline#extensions#tabline#show_buffers=0
-" unfortunately need to turn off branch support cuz current bug with vim/nvim?
-" and use of system() call
-let g:airline#extensions#branch#enabled=0
 
 " javacomplete2 config
 autocmd FileType java setlocal omnifunc=javacomplete#Complete

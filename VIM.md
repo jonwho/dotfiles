@@ -6,7 +6,6 @@
 * [indentLine](https://github.com/Yggdroot/indentLine)
 * [delimitMate](https://github.com/Raimondi/delimitMate)
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
-* [nerdtreetabs](https://github.com/jistr/vim-nerdtree-tabs)
 * [vim-airline](https://github.com/bling/vim-airline)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-easytags](https://github.com/xolox/vim-easytags)
@@ -17,6 +16,7 @@
 * [vim-jsx](https://github.com/mxw/vim-jsx)
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
+* [vim-vinegar](https://github.com/tpope/vim-vinegar)
 * [vim-es6](https://github.com/isRuslan/vim-es6)
 * [html5](https://github.com/othree/html5.vim)
 * [vim-elixir](https://github.com/elixir/vim-elixir)
@@ -33,8 +33,8 @@
 * [vim-rspec](https://github.com/thoughtbot/vim-rspec)
 * [vim-css-color](https://github.com/ap/vim-css-color)
 * [vim-signature](https://github.com/kshenoy/vim-signature)
-* [space-vim](https://github.com/liuchengxu/space-vim)
-* [vim-vinegar](https://github.com/tpope/vim-vinegar)
+* [space-vim](https://github.com/liuchengxu/space-vim-dark)
+* [goyo](https://github.com/junegunn/goyo.vim)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).
