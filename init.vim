@@ -13,7 +13,6 @@ filetype off
 " let g:python_host_prog='/Users/jonathanho/.pyenv/versions/neovim2/bin/python'
 " let g:python3_host_prog='/Users/jonathanho/.pyenv/versions/neovim3/bin/python'
 
-
 "=============================================================================
 " General Settings
 "=============================================================================
@@ -194,6 +193,7 @@ call plug#end()
 " refer to ~/.local/share/nvim/plugged/vim-colorschemes/colors/
 " or :colorscheme <tab> to see list
 colorscheme dracula
+map <F2> :colorscheme gruvbox<CR>
 
 " dont know which plugin it is but it was concealing double quotes from json
 " files which made it very difficult to see what was going on
@@ -207,7 +207,10 @@ let g:deoplete#enable_at_startup=1
 inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 
 " NERDTree config
-map <silent> <C-n> :NERDTreeToggle <CR> :NERDTreeMirror<CR>
+" toggle NERDTree drawer
+map <C-n> :NERDTreeToggle<CR>
+" sync NERDTree drawer among open drawers
+map <C-m> :NERDTreeMirror<CR>
 let NERDTreeShowHidden=1                      " show hidden files in NERDTree on startup <shift>+<i> to toggle
 let g:NERDTreeChDirMode=2                     " CWD changes whenever the root is changed
 au vimenter * if !argc() | NERDTree | endif   " autostart NERDTree when vim starts up if no files specified
