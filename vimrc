@@ -174,18 +174,15 @@ call plug#end()
 " refer to ~/.vim/plugged/vim-colorschemes/color/ for more
 colorscheme space-vim-dark
 
-" dont know which plugin it is but it was concealing double quotes from json
-" files which made it very difficult to see what was going on
-" this turns the concealer off
-set conceallevel=0
-
 " put cursor on a line between { and }
 let delimitMate_expand_cr=1
 
 " better-whitespace config
 " highlight bad whitespace
 hi ExtraWhitespace ctermbg=white
-autocmd BufEnter * EnableStripWhitespaceOnSave
+" strip whitespace on save
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
 
 " vim-easytags config
 " set easytags to update tags asynchronously else it will block vim

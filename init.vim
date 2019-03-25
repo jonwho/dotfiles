@@ -195,10 +195,13 @@ call plug#end()
 colorscheme dracula
 map <F2> :colorscheme gruvbox<CR>
 
-" dont know which plugin it is but it was concealing double quotes from json
-" files which made it very difficult to see what was going on
-" this turns the concealer off
-set conceallevel=0
+" indentLine config
+" indentLine uses conceallevel to show vertical bars but by default it'll make
+" visualizing markdowna and json files difficult because quotes and asteriks
+" will disappear, tuning this to be off by default on specific files
+" SIDENOTE: use `:verboses set conceallevel` to see which plugin was last to
+" touch the configuration
+let g:indentLine_fileTypeExclude=['markdown', 'md', 'json']
 
 " deoplete config
 let g:deoplete#enable_at_startup=1
@@ -211,9 +214,11 @@ inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 map <C-n> :NERDTreeToggle<CR>
 " sync NERDTree drawer among open drawers
 map <C-m> :NERDTreeMirror<CR>
-let NERDTreeShowHidden=1                      " show hidden files in NERDTree on startup <shift>+<i> to toggle
-let g:NERDTreeChDirMode=2                     " CWD changes whenever the root is changed
-au vimenter * if !argc() | NERDTree | endif   " autostart NERDTree when vim starts up if no files specified
+let NERDTreeShowHidden=1                    " show hidden files in NERDTree on startup <shift>+<i> to toggle
+let g:NERDTreeChDirMode=2                   " CWD changes whenever the root is changed
+au vimenter * if !argc() | NERDTree | endif " autostart NERDTree when vim starts up if no files specified
+" ignore listing these files based off REGEX
+let NERDTreeIgnore = ['\.class$', '\.o$']
 
 " nerdcommenter config
 let g:NERDSpaceDelims=1       " add number of spaces after comment delimiter
@@ -227,7 +232,9 @@ let delimitMate_expand_cr=1
 " better-whitespace config
 " highlight bad whitespace
 hi ExtraWhitespace ctermbg=white
-autocmd BufEnter * EnableStripWhitespaceOnSave
+" strip whitespace on save
+let g:better_whitespace_enabled=1
+let g:strip_whitespace_on_save=1
 
 " vim-javascript config
 let g:javascript_enable_domhtmlcss=1
