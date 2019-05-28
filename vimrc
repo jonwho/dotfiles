@@ -47,14 +47,14 @@ let g:netrw_altv=1      " open splits to the right
 autocmd FileType netrw setl bufhidden=delete " auto delete hidden netrw buffers
 
 "=============================================================================
-" Formating Options
+" Formatting Options
 "=============================================================================
 
 " smartindent is an old script! it was meant to be smart complement to
 " autoindent but it keeps fooking up python and ruby comments
 "set smartindent         " next line of indention based on previous line
 
-set colorcolumn=100    " colors single column at line 80 for visual cue
+set colorcolumn=100    " colors single column at line 100 for visual cue
 set autoindent         " autoindent on
 set formatoptions=tcrq " how to auto indent, see fo-table for description
 
@@ -104,6 +104,7 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
+set foldopen-=search " do not open code fold even if it has a search hit
 
 "=============================================================================
 " Misc
