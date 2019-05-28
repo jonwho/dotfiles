@@ -181,9 +181,10 @@ let delimitMate_expand_cr=1
 " better-whitespace config
 " highlight bad whitespace
 hi ExtraWhitespace ctermbg=white
-" strip whitespace on save
+" strip whitespace on save without confirming
 let g:better_whitespace_enabled=1
 let g:strip_whitespace_on_save=1
+let g:strip_whitespace_confirm=0
 
 " vim-easytags config
 " set easytags to update tags asynchronously else it will block vim
