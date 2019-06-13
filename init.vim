@@ -165,7 +165,6 @@ Plug 'xolox/vim-misc' " dependency for xolox's plugins
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'isRuslan/vim-es6', { 'for': 'javascript' }
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'jpalardy/vim-slime'

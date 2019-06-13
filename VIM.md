@@ -17,7 +17,6 @@
 * [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-repeat](https://github.com/tpope/vim-repeat)
 * [vim-vinegar](https://github.com/tpope/vim-vinegar)
-* [vim-es6](https://github.com/isRuslan/vim-es6)
 * [html5](https://github.com/othree/html5.vim)
 * [vim-elixir](https://github.com/elixir/vim-elixir)
 * [vim-slime](https://github.com/jpalardy/vim-slime)
