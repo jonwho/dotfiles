@@ -132,6 +132,15 @@ nnoremap <S-Down> :m+<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
 inoremap <S-Down> <Esc>:m+<CR>
 
+" similar to tabonly, this closes all open buffers except current open buffer
+command! -complete=buffer -bang Bonly
+  \ :call Bufonly()
+command! -complete=buffer -bang Bufonly
+  \ :call Bufonly()
+function! Bufonly()
+  execute ':w|%bd|e#'
+endfunction
+
 "=============================================================================
 " Plugins
 "=============================================================================
