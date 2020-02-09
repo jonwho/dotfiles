@@ -23,7 +23,6 @@
 * [vim-colorschemes](https://github.com/flazz/vim-colorschemes)
 * [vim-indexed-search](https://github.com/henrik/vim-indexed-search)
 * [numbers.vim](https://github.com/myusuf3/numbers.vim)
-* [deoplete.nvim](https://github.com/Shougo/deoplete.nvim)
 * [cql-vim](https://github.com/elubow/cql-vim)
 * [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
@@ -37,23 +36,12 @@
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).
-Run the install script to autoinstall plugins on Vim load. `ag` and `deoplete`
-have binaries or requirements that need to be met in order to install and use.
+Run the install script to autoinstall plugins on Vim load. `ag` has 
+binaries or requirements that need to be met in order to install and use.
 
 This repo's vimrc uses fewer plugins than nvim's init.vim to keep vim as vanilla
 as possible. Plugins are available in init.vim for nvim but there are quite a
 few so if working in large unirepo you might notice a significant slowdown.
-
-## deoplete
-Currently no longer using a plugin for autocomplete. Deoplete & YouCompleteMe were running
-too slow for me. Opt to use `<C-x><C-n>` or the other various options with vanilla VIM.
-Otherwise use notes below for Deoplete.
-
-deoplete is for neovim only. Make sure you meet the requirements first before
-installing deoplete. Check [deoplete](https://github.com/Shougo/deoplete.nvim)
-for more. If using Neovim make sure requirements for Python are met use so
-[pyenv](https://github.com/tweekmonster/nvim-python-doctor/wiki/Advanced:-Using-pyenv)
-to get consistency when starting up Neovim with deoplete.
 
 ## Quick ctags note
 Need to run ctags command in the project root to update .vimtags so vim knows

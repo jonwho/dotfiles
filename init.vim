@@ -181,7 +181,6 @@ Plug 'henrik/vim-indexed-search'
 Plug 'myusuf3/numbers.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'artur-shaik/vim-javacomplete2'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'elubow/cql-vim', { 'for': 'cql' }
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -211,12 +210,6 @@ map <F2> :colorscheme gruvbox<CR>
 " SIDENOTE: use `:verboses set conceallevel` to see which plugin was last to
 " touch the configuration
 let g:indentLine_fileTypeExclude=['markdown', 'md', 'json']
-
-" deoplete config
-let g:deoplete#enable_at_startup=1
-" deoplete tab completion similar to YCM
-" otherwise would have to use <C-n> or <C-p> to cycle through completion list
-inoremap <expr><tab> pumvisible() ? "\<C-n>" : "\<tab>"
 
 " NERDTree config
 " toggle NERDTree drawer
