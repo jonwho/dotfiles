@@ -173,14 +173,14 @@ Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc' " dependency for xolox's plugins
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
-Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'jpalardy/vim-slime'
 Plug 'henrik/vim-indexed-search'
 Plug 'myusuf3/numbers.vim'
 Plug 'flazz/vim-colorschemes'
-Plug 'artur-shaik/vim-javacomplete2'
 Plug 'elubow/cql-vim', { 'for': 'cql' }
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -272,9 +272,6 @@ let g:airline#extensions#tabline#show_splits=0
 " was annoying to see tabline filled with hidden buffers
 " :bd to kill current buffer but :q closes the tab, note the difference
 let g:airline#extensions#tabline#show_buffers=0
-
-" javacomplete2 config
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " vim-easy-align config
 " Start interactive EasyAlign in visual mode (e.g. vipga)
