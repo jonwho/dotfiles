@@ -58,6 +58,10 @@ Must install separately onto your system first otherwise fzf.vim plugin won't
 find the executable. Find it here [https://github.com/ggreer/the_silver_searcher](https://github.com/ggreer/the_silver_searcher).
 This lets you run the ex command `:Ag` to search patterns within files.
 
+## ripgrep
+Follow instructions to install through here [https://github.com/BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep).
+This lets you run the ex command `:Rg` to search regex within files.
+
 ## Workflow
 * Use multiple buffers and windows to work on related problem.
 * Create another tab if working on something separate. (one buffer per tab is inefficient workflow)

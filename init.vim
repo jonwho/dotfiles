@@ -141,6 +141,22 @@ function! Bufonly()
   execute ':w|%bd|e#'
 endfunction
 
+" replace grep with ag
+if executable('ag')
+  " use ag over grep
+  set grepprg=rg
+endif
+
+" replace grep with ripgrep
+" ripgrep feels faster so prefer this over ag too
+if executable('rg')
+  " use rg over grep
+  set grepprg=rg
+endif
+
+" binds K to grep for word under cursor
+nnoremap <silent> K :Rg <C-R><C-W><CR>
+
 "=============================================================================
 " Plugins
 "=============================================================================
