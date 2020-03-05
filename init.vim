@@ -144,7 +144,7 @@ endfunction
 " replace grep with ag
 if executable('ag')
   " use ag over grep
-  set grepprg=rg
+  set grepprg=ag
 endif
 
 " replace grep with ripgrep
@@ -246,6 +246,16 @@ let g:NERDCommentEmptyLines=1 " comment/invert empty lines (useful for large blo
 " delimitMate config
 " put cursor on a line between { and }
 let delimitMate_expand_cr=1
+
+" ale config
+let g:ale_fixers = {
+\  'javascript': ['prettier', 'eslint'],
+\  'ruby': ['rubocop'],
+\  'css': ['prettier'],
+\}
+let g:ale_fix_on_save=1
+" toggles the fixers on/off on save
+command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
 
 " better-whitespace config
 " highlight bad whitespace
