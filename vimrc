@@ -151,6 +151,10 @@ endif
 " binds K to grep for word under cursor
 nnoremap <silent> K :Rg <C-R><C-W><CR>
 
+" <silent> means show no message when this key sequence is used
+" copy filepath to clipboard
+nnoremap <silent> <leader>cp :let @* = expand('%:p')<CR>
+
 "=============================================================================
 " Plugins
 "=============================================================================
