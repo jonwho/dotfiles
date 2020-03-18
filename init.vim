@@ -241,6 +241,8 @@ let g:NERDTreeChDirMode=2                   " CWD changes whenever the root is c
 au vimenter * if !argc() | NERDTree | endif " autostart NERDTree when vim starts up if no files specified
 " ignore listing these files based off REGEX
 let NERDTreeIgnore = ['\.class$', '\.o$']
+" find buffer file in NERDTree
+map <Leader>o :NERDTreeFind<CR>
 
 " nerdcommenter config
 let g:NERDSpaceDelims=1       " add number of spaces after comment delimiter
