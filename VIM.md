@@ -34,6 +34,7 @@
 * [vim-signature](https://github.com/kshenoy/vim-signature)
 * [space-vim](https://github.com/liuchengxu/space-vim-dark)
 * [goyo](https://github.com/junegunn/goyo.vim)
+* [bufexplorer](https://github.com/jlanzarotta/bufexplorer)
 * [how to actually use vim well](http://stackoverflow.com/questionj/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
 
 Vim plugins are managed by [vim-plug](https://github.com/junegunn/vim-plug).

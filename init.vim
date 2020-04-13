@@ -212,6 +212,7 @@ Plug 'ap/vim-css-color'
 Plug 'kshenoy/vim-signature'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'junegunn/goyo.vim'
+Plug 'jlanzarotta/bufexplorer'
 call plug#end()
 
 "=============================================================================
