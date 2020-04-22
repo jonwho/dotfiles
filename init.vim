@@ -106,6 +106,9 @@ set nofoldenable
 set foldlevel=2
 set foldopen-=search " do not open code fold even if it has a search hit
 
+" Java options
+autocmd Filetype java set makeprg=java\ % " to compile & run leetcode problems in Java
+
 "=============================================================================
 " Misc
 "=============================================================================
