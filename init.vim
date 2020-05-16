@@ -107,7 +107,7 @@ set foldlevel=2
 set foldopen-=search " do not open code fold even if it has a search hit
 
 " Java options
-autocmd Filetype java set makeprg=java\ % " to compile & run leetcode problems in Java
+autocmd Filetype java set makeprg=javac\ %\ &&\ java\ -classpath\ %:h:r:\ %:t:r " to compile & run leetcode problems in Java
 
 "=============================================================================
 " Misc
@@ -216,6 +216,7 @@ Plug 'kshenoy/vim-signature'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'junegunn/goyo.vim'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'artur-shaik/vim-javacomplete2'
 call plug#end()
 
 "=============================================================================
@@ -224,8 +225,7 @@ call plug#end()
 
 " refer to ~/.local/share/nvim/plugged/vim-colorschemes/colors/
 " or :colorscheme <tab> to see list
-colorscheme dracula
-map <F2> :colorscheme gruvbox<CR>
+colorscheme gruvbox
 
 " indentLine config
 " indentLine uses conceallevel to show vertical bars but by default it'll make
