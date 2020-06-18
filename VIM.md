@@ -27,7 +27,7 @@
 * [cql-vim](https://github.com/elubow/cql-vim)
 * [vim-easy-align](https://github.com/junegunn/vim-easy-align)
 * [fzf.vim](https://github.com/junegunn/fzf.vim)
-* [ale](https://github.com/w0rp/ale)
+* [ale](https://github.com/dense-analysis/ale)
 * [vim-go](https://github.com/fatih/vim-go)
 * [vim-rspec](https://github.com/thoughtbot/vim-rspec)
 * [vim-css-color](https://github.com/ap/vim-css-color)

@@ -208,7 +208,7 @@ Plug 'elubow/cql-vim', { 'for': 'cql' }
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'ap/vim-css-color'

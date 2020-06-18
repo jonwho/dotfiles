@@ -189,7 +189,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
 Plug 'myusuf3/numbers.vim'
 Plug 'henrik/vim-indexed-search'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'liuchengxu/space-vim-dark'
