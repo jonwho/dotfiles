@@ -225,7 +225,7 @@ call plug#end()
 
 " refer to ~/.local/share/nvim/plugged/vim-colorschemes/colors/
 " or :colorscheme <tab> to see list
-colorscheme gruvbox
+colorscheme neonwave
 
 " indentLine config
 " indentLine uses conceallevel to show vertical bars but by default it'll make

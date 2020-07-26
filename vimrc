@@ -199,7 +199,7 @@ call plug#end()
 " Plugin config
 "=============================================================================
 " refer to ~/.vim/plugged/vim-colorschemes/color/ for more
-colorscheme space-vim-dark
+colorscheme neonwave
 
 " put cursor on a line between { and }
 let delimitMate_expand_cr=1
