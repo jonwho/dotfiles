@@ -23,6 +23,7 @@ cp ./bash_profile ~/.bash_profile
 cp ./tmux.conf ~/.tmux.conf
 cp ./eslintrc.json ~/.eslintrc.json
 cp ./bash_aliases ~/.bash_aliases
+cp ./gitignore_global ~/.gitignore_global
 echo "Done replacing"
 echo ""
 
