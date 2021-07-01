@@ -229,8 +229,8 @@ colorscheme neonwave
 
 " indentLine config
 " indentLine uses conceallevel to show vertical bars but by default it'll make
-" visualizing markdowna and json files difficult because quotes and asteriks
-" will disappear, tuning this to be off by default on specific files
+" visualizing markdown and json files difficult because quotes and asterisks
+" will disappear, turning this to be off by default on specific files
 " SIDENOTE: use `:verboses set conceallevel` to see which plugin was last to
 " touch the configuration
 let g:indentLine_fileTypeExclude=['markdown', 'md', 'json']
