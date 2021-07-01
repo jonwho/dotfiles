@@ -8,7 +8,6 @@ cp ~/.config/nvim/init.vim ~/old.init.vim
 cp ~/.bashrc ~/old.bashrc
 cp ~/.bash_profile ~/old.bash_profile
 cp ~/.tmux.conf ~/old.tmux.conf
-cp ~/.eslintrc.json ~/old.eslintrc.json
 cp ~/.bash_aliases ~/old.bash_aliases
 echo "Done copying"
 echo ""
@@ -21,7 +20,6 @@ cp ./init.vim ~/.config/nvim/init.vim
 cp ./bashrc ~/.bashrc
 cp ./bash_profile ~/.bash_profile
 cp ./tmux.conf ~/.tmux.conf
-cp ./eslintrc.json ~/.eslintrc.json
 cp ./bash_aliases ~/.bash_aliases
 cp ./gitignore_global ~/.gitignore_global
 echo "Done replacing"
