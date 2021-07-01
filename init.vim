@@ -217,6 +217,8 @@ Plug 'liuchengxu/space-vim-dark'
 Plug 'junegunn/goyo.vim'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'artur-shaik/vim-javacomplete2'
+Plug 'posva/vim-vue'
+Plug 'uarun/vim-protobuf'
 call plug#end()
 
 "=============================================================================
