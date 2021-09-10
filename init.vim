@@ -320,8 +320,12 @@ nmap ga <Plug>(EasyAlign)
 " fzf config
 nnoremap <C-f> :FZF<cr>
 " you can actually set ENV vars in a vimrc file
-" this change changes the search command FZF uses to silver_searcher
-let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+" this change changes the search command FZF from `find` to `ripgrep`
+" --files print each file on newline that's searched
+" --follow include symbolic links
+" --hidden include hidden files
+" --glob !path/to/file_or_directory ignore in searches
+let $FZF_DEFAULT_COMMAND='rg --files --follow --hidden --glob "!{node_modules/*,.git/*,vendor/*}"'
 
 " vim-rspec config
 map <Leader>t :call RunCurrentSpecFile()<CR>
