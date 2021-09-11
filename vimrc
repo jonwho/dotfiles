@@ -193,6 +193,7 @@ Plug 'dense-analysis/ale'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'thoughtbot/vim-rspec'
 Plug 'liuchengxu/space-vim-dark'
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
 "=============================================================================

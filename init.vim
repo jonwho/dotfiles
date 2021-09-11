@@ -219,6 +219,7 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'posva/vim-vue'
 Plug 'uarun/vim-protobuf'
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
 "=============================================================================
