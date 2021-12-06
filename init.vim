@@ -225,6 +225,11 @@ call plug#end()
 "=============================================================================
 " Plugin config
 "=============================================================================
+" `:h index` to view builtin VIM mappings
+" `:map` to view mappings made by plugins and user
+" `:nmap` to view normal mode mappings
+" `:imap` to view insert mode mappings
+" `:vmap` to view visual mode mappings
 
 " refer to ~/.local/share/nvim/plugged/vim-colorschemes/colors/
 " or :colorscheme <tab> to see list
@@ -269,6 +274,11 @@ let g:ale_fixers = {
 let g:ale_fix_on_save=1
 " toggles the fixers on/off on save
 command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_save', 0) ? 0 : 1"
+" Jump to ALE lint errors
+nmap ]a :ALENextWrap<CR>
+nmap [a :ALEPreviousWrap<CR>
+nmap ]A :ALELast
+nmap [A :ALEFirst
 
 " better-whitespace config
 " highlight bad whitespace
