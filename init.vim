@@ -277,8 +277,8 @@ command! ALEToggleFixer execute "let g:ale_fix_on_save = get(g:, 'ale_fix_on_sav
 " Jump to ALE lint errors
 nmap ]a :ALENextWrap<CR>
 nmap [a :ALEPreviousWrap<CR>
-nmap ]A :ALELast
-nmap [A :ALEFirst
+nmap ]A :ALELast<CR>
+nmap [A :ALEFirst<CR>
 
 " better-whitespace config
 " highlight bad whitespace
