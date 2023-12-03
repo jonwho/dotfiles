@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Attempting to create missing directories"
+echo ""
+mkdir -p ~/.config/nvim
+
 echo "Copying current dotfiles to old.{dotfile} respectively"
 echo ""
 
