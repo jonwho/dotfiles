@@ -4,7 +4,7 @@ require("jonwho.remap")
 -- may not be the changes that occur
 vim.o.compatible = false
 
-vim.o.filetype = true
+vim.o.filetype = 'on'
 
 local autocmd = vim.api.nvim_create_autocmd
 
@@ -36,9 +36,11 @@ vim.o.list            = false          -- tabs are not shown as <TABS> and EOL a
 vim.o.matchtime       = 2              -- tenths of seconds to show matching pairs
 vim.o.splitbelow      = true           -- extra window open below the current window
 vim.o.splitright      = true           -- open new splits to right/below
-vim.o.t_Co            = 256            -- if terminal supports 256 colors
 vim.g.netrw_liststyle = 3              -- defaults netrw listing style to tree
 vim.o.updatetime      = 50             -- set faster screen updates
+vim.o.guicursor       = ''
+vim.o.nu              = true
+vim.o.relativenumber  = true
 
 ------------------------------------------------------------------------------
 -- Formatting Options
@@ -93,7 +95,7 @@ end})
 -- Programming Options
 ------------------------------------------------------------------------------
 
-vim.o.syntax = true
+vim.o.syntax = 'on'
 vim.o.cin    = true
 vim.cmd [[
   set omnifunc=syntaxcomplete#Complete
