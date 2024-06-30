@@ -41,6 +41,8 @@ vim.o.updatetime      = 50             -- set faster screen updates
 vim.o.guicursor       = ''
 vim.o.nu              = true
 vim.o.relativenumber  = true
+vim.o.termguicolors   = true
+vim.o.colorcolumn     = '99'
 
 ------------------------------------------------------------------------------
 -- Formatting Options
