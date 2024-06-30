@@ -1,0 +1,1 @@
+return { 'thoughtbot/vim-rspec' }

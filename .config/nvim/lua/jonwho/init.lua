@@ -135,5 +135,14 @@ vim.cmd [[
   set cursorline
   hi CursorLine cterm=NONE ctermbg=red ctermfg=white guibg=#ed00f5 guifg=white
 ]]
--- toggle the cursor highlight with <Leader>c
-vim.cmd [[ nnoremap <Leader>c :set cursorline! cursorcolumn!<CR> ]]
+
+-- similar to tabonly, this closes all open buffers except current open buffer
+vim.cmd [[
+command! -nargs=? -complete=buffer -bang Bonly
+\ :call Bufonly()
+command! -nargs=? -complete=buffer -bang Bufonly
+\ :call Bufonly()
+function! Bufonly()
+execute ':w|%bd|e#'
+endfunction
+]]
