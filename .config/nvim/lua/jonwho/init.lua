@@ -48,7 +48,6 @@ vim.o.colorcolumn     = '99'
 -- Formatting Options
 ------------------------------------------------------------------------------
 
-vim.o.colorcolumn   = 99     -- colors single column at line 100 for visual cue
 vim.o.autoindent    = true   -- autoindent on
 vim.o.formatoptions = "tcrq" -- how to auto indent, see fo-table for description
 
