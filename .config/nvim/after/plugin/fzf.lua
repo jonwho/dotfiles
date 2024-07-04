@@ -1,5 +1,5 @@
 -- search word under cursor
-vim.keymap.set("n", "<leader><leader>K", ":Rg <C-R><C-W><CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>K", ":Rg <C-R><C-W><CR>", { noremap = true, silent = true })
 
 vim.keymap.set('n', '<C-f>', ':FZF<cr>', { noremap = true, silent = true })
 
