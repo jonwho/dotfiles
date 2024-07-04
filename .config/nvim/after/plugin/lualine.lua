@@ -37,5 +37,5 @@ require('lualine').setup {
   tabline = {},
   winbar = {},
   inactive_winbar = {},
-  extensions = {}
+  extensions = {'nerdtree', 'quickfix', 'lazy', 'fzf', 'fugitive'}
 }

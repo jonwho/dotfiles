@@ -14,3 +14,9 @@ vim.g.NERDTreeChDirMode = 2
 
 -- ignore listing these files based off REGEX
 vim.g.NERDTreeIgnore = { "\\.class$", "\\.o$" }
+
+-- vim.g.NERDTreeStatusline = -1
+
+vim.cmd([[
+  au VimEnter * if !argc() | NERDTree | endif
+]])
