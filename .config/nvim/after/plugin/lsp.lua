@@ -3,12 +3,12 @@
 -- Mason first
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = {
-		'lua_ls',
+  ensure_installed = {
+    'lua_ls',
     'rubocop',
     'ruby_lsp',
     'gopls',
-	},
+  },
 })
 
 -- Configure LSP after Mason setup
