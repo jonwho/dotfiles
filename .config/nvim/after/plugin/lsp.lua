@@ -7,6 +7,7 @@ require('mason-lspconfig').setup({
 		'lua_ls',
     'rubocop',
     'ruby_lsp',
+    'gopls',
 	},
 })
 
@@ -37,6 +38,17 @@ lsp_zero.extend_lspconfig({
 })
 
 require('lspconfig').lua_ls.setup({})
-require('lspconfig').rubocop.setup({})
 require('lspconfig').ruby_lsp.setup({})
 require('lspconfig').gopls.setup({})
+require('lspconfig').tailwindcss.setup({})
+require('lspconfig').bashls.setup({})
+require('lspconfig').tsserver.setup({})
+require('lspconfig').sqls.setup({})
+require('lspconfig').theme_check.setup({})
+require('lspconfig').vuels.setup({})
+require('lspconfig').yamlls.setup({})
+require('lspconfig').html.setup({})
+require('lspconfig').dockerls.setup({})
+require('lspconfig').docker_compose_language_service.setup({})
+require('lspconfig').cssls.setup({})
+require('lspconfig').bufls.setup({})
