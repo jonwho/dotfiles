@@ -99,6 +99,7 @@ end})
 vim.o.syntax = 'on'
 vim.o.cin    = true
 vim.cmd [[
+  filetype plugin on
   set omnifunc=syntaxcomplete#Complete
 ]]
 
