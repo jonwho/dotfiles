@@ -6,3 +6,7 @@ require'nvim-treesitter.configs'.setup {
 
 	additional_vim_regex_highlighting = false,
 }
+
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.o.foldcolumn = '0'

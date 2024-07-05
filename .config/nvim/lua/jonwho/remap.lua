@@ -11,3 +11,6 @@ vim.cmd [[ nnoremap <Leader>c :set cursorline! cursorcolumn!<CR> ]]
 
 -- insert current datetime
 vim.keymap.set('n', '<Leader>D', ":put =strftime('[%a %Y-%m-%d %H:%M:%S%z]')<CR>")
+
+-- toggle between previous buffer
+vim.keymap.set('n', '<leader><leader>', "<C-6>")
