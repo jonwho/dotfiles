@@ -64,6 +64,30 @@ require("formatter").setup({
 			require("formatter.filetypes.html").tidy,
 		},
 
+		javascript = {
+			require("formatter.filetypes.javascript").prettier,
+		},
+
+		javascriptreact = {
+			require("formatter.filetypes.javascript").prettier,
+		},
+
+		["javascript.jsx"] = {
+			require("formatter.filetypes.javascript").prettier,
+		},
+
+		typescript = {
+			require("formatter.filetypes.javascript").prettier,
+		},
+
+		typescriptreact = {
+			require("formatter.filetypes.javascript").prettier,
+		},
+
+		["typescript.tsx"] = {
+			require("formatter.filetypes.javascript").prettier,
+		},
+
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {
