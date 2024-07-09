@@ -50,11 +50,11 @@ require("formatter").setup({
 			require("formatter.filetypes.proto").buf_format,
 		},
 
-		rb = {
+		ruby = {
 			require("formatter.filetypes.ruby").rubocop,
 		},
 
-		["html.erb"] = {
+		eruby = {
 			require("formatter.filetypes.eruby").erbformatter,
 		},
 
@@ -86,6 +86,14 @@ require("formatter").setup({
 
 		["typescript.tsx"] = {
 			require("formatter.filetypes.javascript").prettier,
+		},
+
+		sql = {
+			require("formatter.filetypes.sql").pgformat,
+		},
+
+		vue = {
+			require("formatter.filetypes.vue").prettier,
 		},
 
 		-- Use the special "*" filetype for defining formatter configurations on
