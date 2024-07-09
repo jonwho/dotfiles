@@ -88,10 +88,6 @@ require("formatter").setup({
 			require("formatter.filetypes.javascript").prettier,
 		},
 
-		sql = {
-			require("formatter.filetypes.sql").pgformat,
-		},
-
 		vue = {
 			require("formatter.filetypes.vue").prettier,
 		},
