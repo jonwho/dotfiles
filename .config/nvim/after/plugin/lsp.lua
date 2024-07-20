@@ -45,7 +45,9 @@ require("lspconfig").gopls.setup({})
 require("lspconfig").tailwindcss.setup({})
 require("lspconfig").bashls.setup({})
 require("lspconfig").tsserver.setup({})
-require("lspconfig").sqls.setup({})
+require("lspconfig").sqls.setup({
+	filetypes = { "sql", "go" },
+})
 require("lspconfig").theme_check.setup({})
 require("lspconfig").vuels.setup({})
 require("lspconfig").yamlls.setup({})
