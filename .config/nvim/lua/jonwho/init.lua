@@ -75,7 +75,7 @@ autocmd({ "BufRead", "BufNewFile" }, {
 	pattern = { "*.py" },
 	callback = function()
 		vim.opt_local.expandtab = true
-		vim.opt_local.shiftround = 4
+		vim.opt_local.shiftround = true
 		vim.opt_local.tabstop = 4
 	end,
 })
